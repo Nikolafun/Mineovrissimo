@@ -19,5 +19,6 @@ public class BebraRoflPovModEntityRenderers {
 	public static void registerEntityRenderers(EntityRenderersEvent.RegisterRenderers event) {
 		event.registerEntityRenderer(BebraRoflPovModEntities.HAMAS.get(), HamasRenderer::new);
 		event.registerEntityRenderer(BebraRoflPovModEntities.AK_47.get(), ThrownItemRenderer::new);
+		event.registerEntityRenderer(BebraRoflPovModEntities.EVREESHIGATOR.get(), ThrownItemRenderer::new);
 	}
 }

@@ -17,6 +17,7 @@ import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.Entity;
 
 import net.mcreator.bebraroflpov.entity.HamasEntity;
+import net.mcreator.bebraroflpov.entity.EvreeshigatorEntity;
 import net.mcreator.bebraroflpov.entity.AK47Entity;
 import net.mcreator.bebraroflpov.BebraRoflPovMod;
 
@@ -29,6 +30,8 @@ public class BebraRoflPovModEntities {
 					.sized(0.6f, 1.8f));
 	public static final RegistryObject<EntityType<AK47Entity>> AK_47 = register("projectile_ak_47",
 			EntityType.Builder.<AK47Entity>of(AK47Entity::new, MobCategory.MISC).setCustomClientFactory(AK47Entity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
+	public static final RegistryObject<EntityType<EvreeshigatorEntity>> EVREESHIGATOR = register("projectile_evreeshigator",
+			EntityType.Builder.<EvreeshigatorEntity>of(EvreeshigatorEntity::new, MobCategory.MISC).setCustomClientFactory(EvreeshigatorEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
 
 	private static <T extends Entity> RegistryObject<EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
 		return REGISTRY.register(registryname, () -> (EntityType<T>) entityTypeBuilder.build(registryname));
