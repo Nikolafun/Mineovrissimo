@@ -273,9 +273,9 @@
       "registry_name": "evreeshigator",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/bebraroflpov/item/EvreeshigatorItem.java",
+          "src/main/resources/assets/bebra_rofl_pov/models/item/evreeshigator.json",
           "src/main/java/net/mcreator/bebraroflpov/entity/EvreeshigatorEntity.java",
-          "src/main/resources/assets/bebra_rofl_pov/models/item/evreeshigator.json"
+          "src/main/java/net/mcreator/bebraroflpov/item/EvreeshigatorItem.java"
         ]
       },
       "path": "~/Other hueta"
@@ -293,8 +293,20 @@
         ],
         "dependencies": [
           {
-            "name": "entity",
-            "type": "entity"
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },

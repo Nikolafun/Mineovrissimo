@@ -33,6 +33,12 @@
     },
     "bulletModel": "Default",
     "customBulletModelTexture": "",
+    "onBulletHitsBlock": {
+      "name": "EvreeshigatorProjectileHitsBlock"
+    },
+    "onBulletHitsEntity": {
+      "name": "EvreeshigatorProjectileHitsBlock"
+    },
     "onBulletFlyingTick": {
       "name": "AK47WhileProjectileFlyingTick"
     }
