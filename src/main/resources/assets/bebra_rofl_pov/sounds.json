@@ -1,0 +1,19 @@
+{
+  "govnida": {
+    "subtitle": "subtitles.govnida",
+    "sounds": [
+      {
+        "name": "bebra_rofl_pov:gavnida----obossanyi-graal-_2020_-feat.-boris-balykov",
+        "stream": false
+      }
+    ]
+  },
+  "allah": {
+    "sounds": [
+      {
+        "name": "bebra_rofl_pov:allah-akbar",
+        "stream": false
+      }
+    ]
+  }
+}

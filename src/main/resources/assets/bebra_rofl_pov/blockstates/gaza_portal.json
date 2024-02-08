@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "axis=z": {
+      "model": "bebra_rofl_pov:block/gaza_portal_ew"
+    },
+    "axis=x": {
+      "model": "bebra_rofl_pov:block/gaza_portal_ns"
+    }
+  }
+}

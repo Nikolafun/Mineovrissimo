@@ -1,0 +1,19 @@
+{
+  "_fv": 43,
+  "_type": "musicdisc",
+  "definition": {
+    "name": "Dvorecvgelendshike",
+    "texture": "discord_pnn0gduku6",
+    "description": "govnida",
+    "creativeTab": {
+      "value": "REDSTONE"
+    },
+    "specialInfo": [],
+    "hasGlow": false,
+    "music": {
+      "value": "CUSTOM:govnida"
+    },
+    "lengthInTicks": 4,
+    "analogOutput": 0
+  }
+}

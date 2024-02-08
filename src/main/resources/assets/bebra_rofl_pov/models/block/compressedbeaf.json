@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "bebra_rofl_pov:blocks/___je3_be3",
+    "up": "bebra_rofl_pov:blocks/___je3_be3",
+    "north": "bebra_rofl_pov:blocks/___je3_be3",
+    "east": "bebra_rofl_pov:blocks/___je3_be3",
+    "south": "bebra_rofl_pov:blocks/___je3_be3",
+    "west": "bebra_rofl_pov:blocks/___je3_be3",
+    "particle": "bebra_rofl_pov:blocks/___je3_be3"
+  },
+  "render_type": "solid"
+}

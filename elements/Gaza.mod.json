@@ -1,0 +1,49 @@
+{
+  "_fv": 43,
+  "_type": "dimension",
+  "definition": {
+    "biomesInDimension": [
+      {
+        "value": "desert"
+      }
+    ],
+    "worldGenType": "Normal world gen",
+    "mainFillerBlock": {
+      "value": "Blocks.SANDSTONE#0"
+    },
+    "fluidBlock": {
+      "value": "Blocks.SANDSTONE#2"
+    },
+    "canRespawnHere": false,
+    "hasFog": false,
+    "isDark": false,
+    "doesWaterVaporize": false,
+    "sleepResult": "ALLOW",
+    "hasSkyLight": false,
+    "imitateOverworldBehaviour": false,
+    "onPlayerEntersDimension": {
+      "name": "GazaPlayerEntersDimension"
+    },
+    "portalFrame": {
+      "value": "CUSTOM:Compressedbeaf"
+    },
+    "portalParticles": {
+      "value": "PORTAL"
+    },
+    "portalLuminance": 15,
+    "portalSound": {
+      "value": "block.portal.ambient"
+    },
+    "enableIgniter": true,
+    "igniterName": "Gaza Portal Igniter",
+    "igniterTab": {
+      "value": "TOOLS"
+    },
+    "texture": "discord_pnn0gduku6",
+    "portalTexture": "z",
+    "enablePortal": true,
+    "whenPortaTriggerlUsed": {
+      "name": "GazaPortalTriggerUsed"
+    }
+  }
+}
