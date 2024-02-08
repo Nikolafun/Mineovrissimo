@@ -1,11 +1,11 @@
 package net.mcreator.bebraroflpov.procedures;
 
-import net.minecraft.world.entity.Entity;
+import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.LevelAccessor;
+import net.minecraft.core.BlockPos;
 
 public class EvreeshigatorProjectileHitsBlockProcedure {
-	public static void execute(Entity entity) {
-		if (entity == null)
-			return;
-		entity.setSecondsOnFire(10);
+	public static void execute(LevelAccessor world, double x, double y, double z) {
+		world.setBlock(new BlockPos(x, y, z), Blocks.LAVA.defaultBlockState(), 3);
 	}
 }
