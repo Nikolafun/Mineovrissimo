@@ -117,17 +117,17 @@
       "registry_name": "gaza",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/bebraroflpov/world/teleporter/GazaTeleporter.java",
-          "src/main/resources/assets/bebra_rofl_pov/models/block/gaza_portal_ns.json",
-          "src/main/java/net/mcreator/bebraroflpov/world/dimension/GazaDimension.java",
-          "src/main/java/net/mcreator/bebraroflpov/world/teleporter/GazaPortalShape.java",
+          "src/main/resources/assets/bebra_rofl_pov/models/block/gaza_portal_ew.json",
+          "src/main/resources/data/bebra_rofl_pov/dimension_type/gaza.json",
           "src/main/java/net/mcreator/bebraroflpov/block/GazaPortalBlock.java",
-          "src/main/resources/data/bebra_rofl_pov/dimension/gaza.json",
-          "src/main/resources/assets/bebra_rofl_pov/blockstates/gaza_portal.json",
+          "src/main/java/net/mcreator/bebraroflpov/world/teleporter/GazaTeleporter.java",
           "src/main/resources/assets/bebra_rofl_pov/models/item/gaza.json",
           "src/main/java/net/mcreator/bebraroflpov/item/GazaItem.java",
-          "src/main/resources/data/bebra_rofl_pov/dimension_type/gaza.json",
-          "src/main/resources/assets/bebra_rofl_pov/models/block/gaza_portal_ew.json"
+          "src/main/resources/assets/bebra_rofl_pov/blockstates/gaza_portal.json",
+          "src/main/resources/assets/bebra_rofl_pov/models/block/gaza_portal_ns.json",
+          "src/main/java/net/mcreator/bebraroflpov/world/teleporter/GazaPortalShape.java",
+          "src/main/resources/data/bebra_rofl_pov/dimension/gaza.json",
+          "src/main/java/net/mcreator/bebraroflpov/world/dimension/GazaDimension.java"
         ]
       },
       "path": "~/Other hueta"
@@ -299,6 +299,22 @@
         ]
       },
       "path": "~/Other hueta"
+    },
+    {
+      "name": "IaDYRIaVYIPIDORAS",
+      "type": "block",
+      "sortid": 10,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ia_dyr_ia_vyipidoras",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/bebra_rofl_pov/models/block/ia_dyr_ia_vyipidoras.json",
+          "src/main/java/net/mcreator/bebraroflpov/block/IaDYRIaVYIPIDORASBlock.java",
+          "src/main/resources/assets/bebra_rofl_pov/blockstates/ia_dyr_ia_vyipidoras.json",
+          "src/main/resources/assets/bebra_rofl_pov/models/item/ia_dyr_ia_vyipidoras.json"
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -337,6 +353,7 @@
       "subtitles.govnida": "PISUNCHIK",
       "block.bebra_rofl_pov.compressedbeaf": "Compressed Beaf",
       "item.bebra_rofl_pov.evreeshigator": "AK-47",
+      "block.bebra_rofl_pov.ia_dyr_ia_vyipidoras": "Ia DYR Ia VYIPIDORAS",
       "item.bebra_rofl_pov.ak_47_ammo": "AK-47 Ammo",
       "item.bebra_rofl_pov.dvorecvgelendshike.desc": "govnida",
       "entity.bebra_rofl_pov.hamas": "Hamas",

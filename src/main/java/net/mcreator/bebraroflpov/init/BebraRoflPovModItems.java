@@ -28,6 +28,7 @@ public class BebraRoflPovModItems {
 	public static final RegistryObject<Item> GAZA = REGISTRY.register("gaza", () -> new GazaItem());
 	public static final RegistryObject<Item> COMPRESSEDBEAF = block(BebraRoflPovModBlocks.COMPRESSEDBEAF, CreativeModeTab.TAB_DECORATIONS);
 	public static final RegistryObject<Item> AK_47_AMMO = REGISTRY.register("ak_47_ammo", () -> new AK47AmmoItem());
+	public static final RegistryObject<Item> IA_DYR_IA_VYIPIDORAS = block(BebraRoflPovModBlocks.IA_DYR_IA_VYIPIDORAS, null);
 	public static final RegistryObject<Item> AK_47 = REGISTRY.register("ak_47", () -> new AK47Item());
 	public static final RegistryObject<Item> EVREESHIGATOR = REGISTRY.register("evreeshigator", () -> new EvreeshigatorItem());
 

@@ -5,6 +5,9 @@
     "biomesInDimension": [
       {
         "value": "desert"
+      },
+      {
+        "value": "CUSTOM:Gazadesert"
       }
     ],
     "worldGenType": "Normal world gen",
@@ -40,7 +43,7 @@
       "value": "TOOLS"
     },
     "texture": "discord_pnn0gduku6",
-    "portalTexture": "gasa_portal",
+    "portalTexture": "z",
     "enablePortal": true,
     "whenPortaTriggerlUsed": {
       "name": "GazaPortalTriggerUsed"

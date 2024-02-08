@@ -3,7 +3,7 @@
   "_type": "rangeditem",
   "definition": {
     "renderType": 0,
-    "texture": "biezimkhuiiennii",
+    "texture": "olfn",
     "customModelName": "Normal",
     "name": "AK-47",
     "specialInfo": [],
@@ -15,14 +15,14 @@
       "value": "CUSTOM:AK47Ammo"
     },
     "shootConstantly": true,
-    "usageCount": 100,
+    "usageCount": 450,
     "actionSound": {
       "value": "CUSTOM:ak_fire"
     },
     "hasGlow": false,
     "animation": "none",
     "enableMeleeDamage": true,
-    "damageVsEntity": 2.0,
+    "damageVsEntity": 10.0,
     "bulletPower": 3.0,
     "bulletDamage": 3.0,
     "bulletKnockback": 1,
@@ -33,6 +33,9 @@
     },
     "bulletModel": "Default",
     "customBulletModelTexture": "",
+    "onBulletHitsBlock": {
+      "name": "EvreeshigatorProjectileHitsBlock"
+    },
     "onBulletFlyingTick": {
       "name": "AK47WhileProjectileFlyingTick"
     }
