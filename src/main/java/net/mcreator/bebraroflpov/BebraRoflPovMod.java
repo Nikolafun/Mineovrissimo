@@ -29,6 +29,7 @@ import net.minecraftforge.common.MinecraftForge;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.FriendlyByteBuf;
 
+import net.mcreator.bebraroflpov.init.BebraRoflPovModVillagerProfessions;
 import net.mcreator.bebraroflpov.init.BebraRoflPovModSounds;
 import net.mcreator.bebraroflpov.init.BebraRoflPovModPaintings;
 import net.mcreator.bebraroflpov.init.BebraRoflPovModItems;
@@ -62,7 +63,7 @@ public class BebraRoflPovMod {
 		BebraRoflPovModPaintings.REGISTRY.register(bus);
 
 		BebraRoflPovModBiomes.REGISTRY.register(bus);
-
+		BebraRoflPovModVillagerProfessions.PROFESSIONS.register(bus);
 	}
 
 	private static final String PROTOCOL_VERSION = "1";

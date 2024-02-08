@@ -16,7 +16,9 @@ import net.minecraft.world.entity.MobCategory;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.Entity;
 
+import net.mcreator.bebraroflpov.entity.HamascreeperEntity;
 import net.mcreator.bebraroflpov.entity.HamasEntity;
+import net.mcreator.bebraroflpov.entity.EvreiEntity;
 import net.mcreator.bebraroflpov.entity.EvreeshigatorEntity;
 import net.mcreator.bebraroflpov.entity.AK47Entity;
 import net.mcreator.bebraroflpov.BebraRoflPovMod;
@@ -32,6 +34,14 @@ public class BebraRoflPovModEntities {
 			EntityType.Builder.<AK47Entity>of(AK47Entity::new, MobCategory.MISC).setCustomClientFactory(AK47Entity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
 	public static final RegistryObject<EntityType<EvreeshigatorEntity>> EVREESHIGATOR = register("projectile_evreeshigator",
 			EntityType.Builder.<EvreeshigatorEntity>of(EvreeshigatorEntity::new, MobCategory.MISC).setCustomClientFactory(EvreeshigatorEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
+	public static final RegistryObject<EntityType<EvreiEntity>> EVREI = register("evrei",
+			EntityType.Builder.<EvreiEntity>of(EvreiEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(EvreiEntity::new)
+
+					.sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<HamascreeperEntity>> HAMASCREEPER = register("hamascreeper",
+			EntityType.Builder.<HamascreeperEntity>of(HamascreeperEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(HamascreeperEntity::new)
+
+					.sized(0.6f, 1.8f));
 
 	private static <T extends Entity> RegistryObject<EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
 		return REGISTRY.register(registryname, () -> (EntityType<T>) entityTypeBuilder.build(registryname));
@@ -41,11 +51,15 @@ public class BebraRoflPovModEntities {
 	public static void init(FMLCommonSetupEvent event) {
 		event.enqueueWork(() -> {
 			HamasEntity.init();
+			EvreiEntity.init();
+			HamascreeperEntity.init();
 		});
 	}
 
 	@SubscribeEvent
 	public static void registerAttributes(EntityAttributeCreationEvent event) {
 		event.put(HAMAS.get(), HamasEntity.createAttributes().build());
+		event.put(EVREI.get(), EvreiEntity.createAttributes().build());
+		event.put(HAMASCREEPER.get(), HamascreeperEntity.createAttributes().build());
 	}
 }

@@ -14,6 +14,7 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.BlockItem;
 
+import net.mcreator.bebraroflpov.item.HamasheadItem;
 import net.mcreator.bebraroflpov.item.GazaItem;
 import net.mcreator.bebraroflpov.item.EvreeshigatorItem;
 import net.mcreator.bebraroflpov.item.DvorecvgelendshikeItem;
@@ -31,6 +32,10 @@ public class BebraRoflPovModItems {
 	public static final RegistryObject<Item> IA_DYR_IA_VYIPIDORAS = block(BebraRoflPovModBlocks.IA_DYR_IA_VYIPIDORAS, null);
 	public static final RegistryObject<Item> AK_47 = REGISTRY.register("ak_47", () -> new AK47Item());
 	public static final RegistryObject<Item> EVREESHIGATOR = REGISTRY.register("evreeshigator", () -> new EvreeshigatorItem());
+	public static final RegistryObject<Item> EVREI_SPAWN_EGG = REGISTRY.register("evrei_spawn_egg", () -> new ForgeSpawnEggItem(BebraRoflPovModEntities.EVREI, -1, -1, new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
+	public static final RegistryObject<Item> HAMASCREEPER_SPAWN_EGG = REGISTRY.register("hamascreeper_spawn_egg",
+			() -> new ForgeSpawnEggItem(BebraRoflPovModEntities.HAMASCREEPER, -16737997, -26368, new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
+	public static final RegistryObject<Item> HAMASHEAD = REGISTRY.register("hamashead", () -> new HamasheadItem());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));

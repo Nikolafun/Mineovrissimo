@@ -3,14 +3,21 @@
   "biome.bebra_rofl_pov.gazadesert": "Gazadesert",
   "item.bebra_rofl_pov.ak_47": "AK-47",
   "subtitles.ak_fire": "Shot from AK-47",
+  "entity.bebra_rofl_pov.hamascreeper": "Hamascreeper",
   "subtitles.govnida": "PISUNCHIK",
   "block.bebra_rofl_pov.compressedbeaf": "Compressed Beaf",
   "item.bebra_rofl_pov.evreeshigator": "AK-47",
+  "subtitles.podlaya_musica": "",
+  "item.bebra_rofl_pov.hamashead": "Hamashead",
   "block.bebra_rofl_pov.ia_dyr_ia_vyipidoras": "Ia DYR Ia VYIPIDORAS",
   "item.bebra_rofl_pov.ak_47_ammo": "AK-47 Ammo",
+  "entity.minecraft.villager.bebra_rofl_pov.evreitrade": "Evreitrade",
   "item.bebra_rofl_pov.dvorecvgelendshike.desc": "govnida",
   "entity.bebra_rofl_pov.hamas": "Hamas",
   "item.bebra_rofl_pov.hamas_spawn_egg": "Hamas Spawn Egg",
+  "entity.bebra_rofl_pov.evrei": "Evrei",
   "item.bebra_rofl_pov.dvorecvgelendshike": "Dvorecvgelendshike",
-  "item.bebra_rofl_pov.gaza": "Gaza Portal Igniter"
+  "item.bebra_rofl_pov.gaza": "Gaza Portal Igniter",
+  "item.bebra_rofl_pov.evrei_spawn_egg": "Evrei Spawn Egg",
+  "item.bebra_rofl_pov.hamascreeper_spawn_egg": "Hamascreeper Spawn Egg"
 }

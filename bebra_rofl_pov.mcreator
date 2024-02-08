@@ -327,6 +327,113 @@
           "src/main/resources/assets/bebra_rofl_pov/models/item/ia_dyr_ia_vyipidoras.json"
         ]
       }
+    },
+    {
+      "name": "HamascreeperPlayerCollidesWithThisEntity",
+      "type": "procedure",
+      "sortid": 15,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hamascreeper_player_collides_with_this_entity",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/bebraroflpov/procedures/HamascreeperPlayerCollidesWithThisEntityProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Mobs"
+    },
+    {
+      "name": "Evrei",
+      "type": "livingentity",
+      "sortid": 16,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "evrei",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/bebraroflpov/entity/EvreiEntity.java",
+          "src/main/resources/assets/bebra_rofl_pov/models/item/evrei_spawn_egg.json",
+          "src/main/resources/data/bebra_rofl_pov/forge/biome_modifier/evrei_biome_modifier.json",
+          "src/main/java/net/mcreator/bebraroflpov/client/renderer/EvreiRenderer.java"
+        ]
+      },
+      "path": "~/Mobs"
+    },
+    {
+      "name": "Evreitrade",
+      "type": "villagerprofession",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "evreitrade",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Mobs"
+    },
+    {
+      "name": "Hamascreeper",
+      "type": "livingentity",
+      "sortid": 17,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hamascreeper",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/bebra_rofl_pov/forge/biome_modifier/hamascreeper_biome_modifier.json",
+          "src/main/java/net/mcreator/bebraroflpov/entity/HamascreeperEntity.java",
+          "src/main/java/net/mcreator/bebraroflpov/client/renderer/HamascreeperRenderer.java",
+          "src/main/resources/assets/bebra_rofl_pov/models/item/hamascreeper_spawn_egg.json"
+        ]
+      },
+      "path": "~/Mobs"
+    },
+    {
+      "name": "HamasOnInitialEntitySpawns",
+      "type": "procedure",
+      "sortid": 18,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hamas_on_initial_entity_spawns",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/bebraroflpov/procedures/HamasOnInitialEntitySpawnsProcedure.java"
+        ],
+        "dependencies": []
+      },
+      "path": "~/Mobs"
+    },
+    {
+      "name": "Hamashead",
+      "type": "item",
+      "sortid": 19,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hamashead",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/bebraroflpov/item/HamasheadItem.java",
+          "src/main/resources/assets/bebra_rofl_pov/models/item/hamashead.json"
+        ]
+      },
+      "path": "~/Mobs"
     }
   ],
   "variable_elements": [],
@@ -354,6 +461,14 @@
       ],
       "category": "hostile",
       "subtitle": ""
+    },
+    {
+      "name": "podlaya_musica",
+      "files": [
+        "podlaia-ievrieiskaia-muzyka"
+      ],
+      "category": "neutral",
+      "subtitle": ""
     }
   ],
   "language_map": {
@@ -362,16 +477,23 @@
       "biome.bebra_rofl_pov.gazadesert": "Gazadesert",
       "item.bebra_rofl_pov.ak_47": "AK-47",
       "subtitles.ak_fire": "Shot from AK-47",
+      "entity.bebra_rofl_pov.hamascreeper": "Hamascreeper",
       "subtitles.govnida": "PISUNCHIK",
       "block.bebra_rofl_pov.compressedbeaf": "Compressed Beaf",
       "item.bebra_rofl_pov.evreeshigator": "AK-47",
+      "subtitles.podlaya_musica": "",
+      "item.bebra_rofl_pov.hamashead": "Hamashead",
       "block.bebra_rofl_pov.ia_dyr_ia_vyipidoras": "Ia DYR Ia VYIPIDORAS",
       "item.bebra_rofl_pov.ak_47_ammo": "AK-47 Ammo",
+      "entity.minecraft.villager.bebra_rofl_pov.evreitrade": "Evreitrade",
       "item.bebra_rofl_pov.dvorecvgelendshike.desc": "govnida",
       "entity.bebra_rofl_pov.hamas": "Hamas",
       "item.bebra_rofl_pov.hamas_spawn_egg": "Hamas Spawn Egg",
+      "entity.bebra_rofl_pov.evrei": "Evrei",
       "item.bebra_rofl_pov.dvorecvgelendshike": "Dvorecvgelendshike",
-      "item.bebra_rofl_pov.gaza": "Gaza Portal Igniter"
+      "item.bebra_rofl_pov.gaza": "Gaza Portal Igniter",
+      "item.bebra_rofl_pov.evrei_spawn_egg": "Evrei Spawn Egg",
+      "item.bebra_rofl_pov.hamascreeper_spawn_egg": "Hamascreeper Spawn Egg"
     }
   },
   "foldersRoot": {

@@ -1,0 +1,16 @@
+{
+  "_fv": 43,
+  "_type": "villagerprofession",
+  "definition": {
+    "displayName": "Evreitrade",
+    "pointOfInterest": {
+      "value": "Blocks.SAND#0"
+    },
+    "actionSound": {
+      "value": "CUSTOM:podlaya_musica"
+    },
+    "hat": "None",
+    "professionTextureFile": "ievriei.png",
+    "zombifiedProfessionTextureFile": "ievriei.png"
+  }
+}

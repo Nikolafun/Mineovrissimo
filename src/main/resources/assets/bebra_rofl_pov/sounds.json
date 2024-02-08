@@ -24,5 +24,13 @@
         "stream": false
       }
     ]
+  },
+  "podlaya_musica": {
+    "sounds": [
+      {
+        "name": "bebra_rofl_pov:podlaia-ievrieiskaia-muzyka",
+        "stream": false
+      }
+    ]
   }
 }
