@@ -103,6 +103,13 @@ public class HamasEntity extends Monster {
 	}
 
 	@Override
+	public boolean hurt(DamageSource source, float amount) {
+		if (source.isExplosion())
+			return false;
+		return super.hurt(source, amount);
+	}
+
+	@Override
 	public void die(DamageSource source) {
 		super.die(source);
 		HamasDiesProcedure.execute(this.level, this.getX(), this.getY(), this.getZ());
