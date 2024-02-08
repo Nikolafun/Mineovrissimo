@@ -38,7 +38,24 @@
         "files": [
           "src/main/java/net/mcreator/bebraroflpov/procedures/HamasFallProcedure.java"
         ],
-        "dependencies": []
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          }
+        ]
       },
       "path": "~/Mobs"
     },
