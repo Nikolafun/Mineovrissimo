@@ -4,9 +4,6 @@
   "definition": {
     "biomesInDimension": [
       {
-        "value": "desert"
-      },
-      {
         "value": "CUSTOM:Gazadesert"
       }
     ],
@@ -18,11 +15,11 @@
       "value": "Blocks.SANDSTONE#2"
     },
     "canRespawnHere": false,
-    "hasFog": false,
+    "hasFog": true,
     "isDark": false,
     "doesWaterVaporize": false,
     "sleepResult": "ALLOW",
-    "hasSkyLight": false,
+    "hasSkyLight": true,
     "imitateOverworldBehaviour": false,
     "onPlayerEntersDimension": {
       "name": "GazaPlayerEntersDimension"

@@ -3,8 +3,8 @@
   "biomes": "bebra_rofl_pov:gazadesert",
   "spawners": {
     "type": "bebra_rofl_pov:hamas",
-    "weight": 2,
-    "minCount": 4,
+    "weight": 1,
+    "minCount": 1,
     "maxCount": 4
   }
 }
