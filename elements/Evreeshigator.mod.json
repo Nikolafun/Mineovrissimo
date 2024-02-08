@@ -5,7 +5,7 @@
     "renderType": 0,
     "texture": "olfn",
     "customModelName": "Normal",
-    "name": "AK-47",
+    "name": "Евреесжигатор",
     "specialInfo": [],
     "creativeTab": {
       "value": "COMBAT"
@@ -17,7 +17,7 @@
     "shootConstantly": true,
     "usageCount": 450,
     "actionSound": {
-      "value": "CUSTOM:ak_fire"
+      "value": "CUSTOM:podlaya_musica"
     },
     "hasGlow": false,
     "animation": "none",

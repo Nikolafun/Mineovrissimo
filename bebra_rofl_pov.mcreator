@@ -273,9 +273,9 @@
       "registry_name": "evreeshigator",
       "metadata": {
         "files": [
-          "src/main/resources/assets/bebra_rofl_pov/models/item/evreeshigator.json",
+          "src/main/java/net/mcreator/bebraroflpov/item/EvreeshigatorItem.java",
           "src/main/java/net/mcreator/bebraroflpov/entity/EvreeshigatorEntity.java",
-          "src/main/java/net/mcreator/bebraroflpov/item/EvreeshigatorItem.java"
+          "src/main/resources/assets/bebra_rofl_pov/models/item/evreeshigator.json"
         ]
       },
       "path": "~/Other hueta"
@@ -434,6 +434,49 @@
         ]
       },
       "path": "~/Mobs"
+    },
+    {
+      "name": "Evreitrader",
+      "type": "villagertrade",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "evreitrader",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Mobs"
+    },
+    {
+      "name": "Hmashead",
+      "type": "loottable",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hmashead",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/bebra_rofl_pov/loot_tables/blocks/hmashead.json"
+        ]
+      },
+      "path": "~/Mobs"
+    },
+    {
+      "name": "Banderik",
+      "type": "block",
+      "sortid": 20,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "banderik",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/bebra_rofl_pov/models/item/banderik.json",
+          "src/main/resources/assets/bebra_rofl_pov/models/block/banderik.json",
+          "src/main/resources/assets/bebra_rofl_pov/models/block/banderik_outer.json",
+          "src/main/resources/assets/bebra_rofl_pov/blockstates/banderik.json",
+          "src/main/java/net/mcreator/bebraroflpov/block/BanderikBlock.java",
+          "src/main/resources/assets/bebra_rofl_pov/models/block/banderik_inner.json"
+        ]
+      },
+      "path": "~/Ukraine"
     }
   ],
   "variable_elements": [],
@@ -480,7 +523,7 @@
       "entity.bebra_rofl_pov.hamascreeper": "Hamascreeper",
       "subtitles.govnida": "PISUNCHIK",
       "block.bebra_rofl_pov.compressedbeaf": "Compressed Beaf",
-      "item.bebra_rofl_pov.evreeshigator": "AK-47",
+      "item.bebra_rofl_pov.evreeshigator": "Евреесжигатор",
       "subtitles.podlaya_musica": "",
       "item.bebra_rofl_pov.hamashead": "Hamashead",
       "block.bebra_rofl_pov.ia_dyr_ia_vyipidoras": "Ia DYR Ia VYIPIDORAS",
@@ -490,6 +533,7 @@
       "entity.bebra_rofl_pov.hamas": "Hamas",
       "item.bebra_rofl_pov.hamas_spawn_egg": "Hamas Spawn Egg",
       "entity.bebra_rofl_pov.evrei": "Evrei",
+      "block.bebra_rofl_pov.banderik": "Banderik",
       "item.bebra_rofl_pov.dvorecvgelendshike": "Dvorecvgelendshike",
       "item.bebra_rofl_pov.gaza": "Gaza Portal Igniter",
       "item.bebra_rofl_pov.evrei_spawn_egg": "Evrei Spawn Egg",
@@ -509,6 +553,10 @@
       },
       {
         "name": "Other hueta",
+        "children": []
+      },
+      {
+        "name": "Ukraine",
         "children": []
       }
     ]

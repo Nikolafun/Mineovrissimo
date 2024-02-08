@@ -1,12 +1,10 @@
 {
   "type": "forge:add_spawns",
-  "biomes": {
-    "type": "forge:any"
-  },
+  "biomes": "bebra_rofl_pov:gazadesert",
   "spawners": {
     "type": "bebra_rofl_pov:evrei",
-    "weight": 20,
-    "minCount": 4,
-    "maxCount": 4
+    "weight": 1,
+    "minCount": 1,
+    "maxCount": 1
   }
 }

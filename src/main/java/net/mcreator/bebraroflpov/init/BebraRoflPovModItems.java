@@ -36,6 +36,7 @@ public class BebraRoflPovModItems {
 	public static final RegistryObject<Item> HAMASCREEPER_SPAWN_EGG = REGISTRY.register("hamascreeper_spawn_egg",
 			() -> new ForgeSpawnEggItem(BebraRoflPovModEntities.HAMASCREEPER, -16737997, -26368, new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
 	public static final RegistryObject<Item> HAMASHEAD = REGISTRY.register("hamashead", () -> new HamasheadItem());
+	public static final RegistryObject<Item> BANDERIK = block(BebraRoflPovModBlocks.BANDERIK, CreativeModeTab.TAB_BUILDING_BLOCKS);
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));

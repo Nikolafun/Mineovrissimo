@@ -1,0 +1,9 @@
+{
+  "parent": "block/stairs",
+  "textures": {
+    "bottom": "bebra_rofl_pov:blocks/250px-sbandera",
+    "top": "bebra_rofl_pov:blocks/250px-sbandera",
+    "side": "bebra_rofl_pov:blocks/250px-sbandera"
+  },
+  "render_type": "solid"
+}

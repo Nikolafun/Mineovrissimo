@@ -85,13 +85,13 @@
       "value": "CUSTOM:IaDYRIaVYIPIDORAS"
     },
     "livingSound": {
-      "value": ""
+      "value": "CUSTOM:podlaya_musica"
     },
     "hurtSound": {
-      "value": "entity.generic.hurt"
+      "value": "CUSTOM:podlaya_musica"
     },
     "deathSound": {
-      "value": "entity.generic.death"
+      "value": "CUSTOM:podlaya_musica"
     },
     "stepSound": {
       "value": ""
@@ -111,11 +111,15 @@
     "rangedAttackRadius": 10.0,
     "spawnThisMob": true,
     "doesDespawnWhenIdle": true,
-    "spawningProbability": 20,
+    "spawningProbability": 1,
     "mobSpawningType": "monster",
-    "minNumberOfMobsPerGroup": 4,
-    "maxNumberOfMobsPerGroup": 4,
-    "restrictionBiomes": [],
+    "minNumberOfMobsPerGroup": 1,
+    "maxNumberOfMobsPerGroup": 1,
+    "restrictionBiomes": [
+      {
+        "value": "CUSTOM:Gazadesert"
+      }
+    ],
     "spawnInDungeons": false
   }
 }
