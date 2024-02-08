@@ -7,6 +7,6 @@ import net.minecraft.world.level.Explosion;
 public class HamasDiesProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z) {
 		if (world instanceof Level _level && !_level.isClientSide())
-			_level.explode(null, x, y, z, 12, Explosion.BlockInteraction.DESTROY);
+			_level.explode(null, x, y, z, 45, Explosion.BlockInteraction.BREAK);
 	}
 }

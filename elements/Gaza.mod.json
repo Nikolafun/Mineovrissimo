@@ -40,7 +40,7 @@
       "value": "TOOLS"
     },
     "texture": "discord_pnn0gduku6",
-    "portalTexture": "z",
+    "portalTexture": "gasa_portal",
     "enablePortal": true,
     "whenPortaTriggerlUsed": {
       "name": "GazaPortalTriggerUsed"
