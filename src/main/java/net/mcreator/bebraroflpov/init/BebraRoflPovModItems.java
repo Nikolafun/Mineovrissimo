@@ -24,6 +24,7 @@ public class BebraRoflPovModItems {
 	public static final RegistryObject<Item> DVORECVGELENDSHIKE = REGISTRY.register("dvorecvgelendshike", () -> new DvorecvgelendshikeItem());
 	public static final RegistryObject<Item> GAZA = REGISTRY.register("gaza", () -> new GazaItem());
 	public static final RegistryObject<Item> COMPRESSEDBEAF = block(BebraRoflPovModBlocks.COMPRESSEDBEAF, CreativeModeTab.TAB_DECORATIONS);
+	public static final RegistryObject<Item> IA_DYR_IA_VYIPIDORAS = block(BebraRoflPovModBlocks.IA_DYR_IA_VYIPIDORAS, null);
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));

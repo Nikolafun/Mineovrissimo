@@ -183,6 +183,22 @@
         ]
       },
       "path": "~/Other hueta"
+    },
+    {
+      "name": "IaDYRIaVYIPIDORAS",
+      "type": "block",
+      "sortid": 10,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ia_dyr_ia_vyipidoras",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/bebraroflpov/block/IaDYRIaVYIPIDORASBlock.java",
+          "src/main/resources/assets/bebra_rofl_pov/blockstates/ia_dyr_ia_vyipidoras.json",
+          "src/main/resources/assets/bebra_rofl_pov/models/block/ia_dyr_ia_vyipidoras.json",
+          "src/main/resources/assets/bebra_rofl_pov/models/item/ia_dyr_ia_vyipidoras.json"
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -213,6 +229,7 @@
       "item.bebra_rofl_pov.hamas_spawn_egg": "Hamas Spawn Egg",
       "subtitles.govnida": "PISUNCHIK",
       "block.bebra_rofl_pov.compressedbeaf": "Compressedbeaf",
+      "block.bebra_rofl_pov.ia_dyr_ia_vyipidoras": "Ia DYR Ia VYIPIDORAS",
       "item.bebra_rofl_pov.dvorecvgelendshike": "Dvorecvgelendshike",
       "item.bebra_rofl_pov.gaza": "Gaza Portal Igniter"
     }

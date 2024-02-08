@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "bebra_rofl_pov:blocks/russiasucks",
+    "up": "bebra_rofl_pov:blocks/russiasucks",
+    "north": "bebra_rofl_pov:blocks/russiasucks",
+    "east": "bebra_rofl_pov:blocks/russiasucks",
+    "south": "bebra_rofl_pov:blocks/russiasucks",
+    "west": "bebra_rofl_pov:blocks/russiasucks",
+    "particle": "bebra_rofl_pov:blocks/russiasucks"
+  },
+  "render_type": "solid"
+}
