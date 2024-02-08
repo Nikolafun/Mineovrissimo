@@ -1,12 +1,14 @@
 {
   "subtitles.allah": "",
   "biome.bebra_rofl_pov.gazadesert": "Gazadesert",
+  "item.bebra_rofl_pov.ak_47": "AK-47",
+  "subtitles.ak_fire": "Shot from AK-47",
+  "subtitles.govnida": "PISUNCHIK",
+  "block.bebra_rofl_pov.compressedbeaf": "Compressed Beaf",
+  "item.bebra_rofl_pov.ak_47_ammo": "AK-47 Ammo",
   "item.bebra_rofl_pov.dvorecvgelendshike.desc": "govnida",
   "entity.bebra_rofl_pov.hamas": "Hamas",
   "item.bebra_rofl_pov.hamas_spawn_egg": "Hamas Spawn Egg",
-  "subtitles.govnida": "PISUNCHIK",
-  "block.bebra_rofl_pov.compressedbeaf": "Compressedbeaf",
-  "block.bebra_rofl_pov.ia_dyr_ia_vyipidoras": "Ia DYR Ia VYIPIDORAS",
   "item.bebra_rofl_pov.dvorecvgelendshike": "Dvorecvgelendshike",
   "item.bebra_rofl_pov.gaza": "Gaza Portal Igniter"
 }

@@ -8,6 +8,15 @@
       }
     ]
   },
+  "ak_fire": {
+    "subtitle": "subtitles.ak_fire",
+    "sounds": [
+      {
+        "name": "bebra_rofl_pov:ak47_fire",
+        "stream": false
+      }
+    ]
+  },
   "allah": {
     "sounds": [
       {

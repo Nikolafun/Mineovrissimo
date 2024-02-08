@@ -10,7 +10,7 @@
     "textureBack": "___je3_be3",
     "renderType": 10,
     "customModelName": "Normal",
-    "rotationMode": 0,
+    "rotationMode": 2,
     "enablePitch": false,
     "emissiveRendering": false,
     "displayFluidOverlay": false,
@@ -20,7 +20,7 @@
     "isItemTinted": false,
     "hasTransparency": false,
     "connectedSides": false,
-    "transparencyType": "SOLID",
+    "transparencyType": "CUTOUT_MIPPED",
     "disableOffset": false,
     "boundingBoxes": [
       {
@@ -33,7 +33,7 @@
         "subtract": false
       }
     ],
-    "name": "Compressedbeaf",
+    "name": "Compressed Beaf",
     "specialInfo": [],
     "hardness": 1.0,
     "resistance": 10.0,
@@ -54,7 +54,7 @@
     "canRedstoneConnect": false,
     "lightOpacity": 15,
     "material": {
-      "value": "ROCK"
+      "value": "NETHER_PLANTS"
     },
     "tickRate": 0,
     "tickRandomly": false,
@@ -63,7 +63,7 @@
     "emittedRedstonePower": {
       "fixedValue": 15.0
     },
-    "colorOnMap": "DEFAULT",
+    "colorOnMap": "PINK",
     "creativePickItem": {
       "value": ""
     },

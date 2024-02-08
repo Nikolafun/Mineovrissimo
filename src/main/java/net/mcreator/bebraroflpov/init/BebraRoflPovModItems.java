@@ -16,6 +16,8 @@ import net.minecraft.world.item.BlockItem;
 
 import net.mcreator.bebraroflpov.item.GazaItem;
 import net.mcreator.bebraroflpov.item.DvorecvgelendshikeItem;
+import net.mcreator.bebraroflpov.item.AK47Item;
+import net.mcreator.bebraroflpov.item.AK47AmmoItem;
 import net.mcreator.bebraroflpov.BebraRoflPovMod;
 
 public class BebraRoflPovModItems {
@@ -24,7 +26,8 @@ public class BebraRoflPovModItems {
 	public static final RegistryObject<Item> DVORECVGELENDSHIKE = REGISTRY.register("dvorecvgelendshike", () -> new DvorecvgelendshikeItem());
 	public static final RegistryObject<Item> GAZA = REGISTRY.register("gaza", () -> new GazaItem());
 	public static final RegistryObject<Item> COMPRESSEDBEAF = block(BebraRoflPovModBlocks.COMPRESSEDBEAF, CreativeModeTab.TAB_DECORATIONS);
-	public static final RegistryObject<Item> IA_DYR_IA_VYIPIDORAS = block(BebraRoflPovModBlocks.IA_DYR_IA_VYIPIDORAS, null);
+	public static final RegistryObject<Item> AK_47_AMMO = REGISTRY.register("ak_47_ammo", () -> new AK47AmmoItem());
+	public static final RegistryObject<Item> AK_47 = REGISTRY.register("ak_47", () -> new AK47Item());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));

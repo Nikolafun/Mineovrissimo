@@ -9,5 +9,5 @@
     "west": "bebra_rofl_pov:blocks/___je3_be3",
     "particle": "bebra_rofl_pov:blocks/___je3_be3"
   },
-  "render_type": "solid"
+  "render_type": "cutout_mipped"
 }

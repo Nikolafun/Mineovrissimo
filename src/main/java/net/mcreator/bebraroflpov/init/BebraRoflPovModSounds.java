@@ -16,5 +16,6 @@ import net.mcreator.bebraroflpov.BebraRoflPovMod;
 public class BebraRoflPovModSounds {
 	public static final DeferredRegister<SoundEvent> REGISTRY = DeferredRegister.create(ForgeRegistries.SOUND_EVENTS, BebraRoflPovMod.MODID);
 	public static final RegistryObject<SoundEvent> GOVNIDA = REGISTRY.register("govnida", () -> new SoundEvent(new ResourceLocation("bebra_rofl_pov", "govnida")));
+	public static final RegistryObject<SoundEvent> AK_FIRE = REGISTRY.register("ak_fire", () -> new SoundEvent(new ResourceLocation("bebra_rofl_pov", "ak_fire")));
 	public static final RegistryObject<SoundEvent> ALLAH = REGISTRY.register("allah", () -> new SoundEvent(new ResourceLocation("bebra_rofl_pov", "allah")));
 }

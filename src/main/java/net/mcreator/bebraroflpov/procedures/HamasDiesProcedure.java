@@ -26,6 +26,6 @@ public class HamasDiesProcedure {
 
 	private static void execute(@Nullable Event event, LevelAccessor world, double x, double y, double z) {
 		if (world instanceof Level _level && !_level.isClientSide())
-			_level.explode(null, x, y, z, 4, Explosion.BlockInteraction.DESTROY);
+			_level.explode(null, x, y, z, 12, Explosion.BlockInteraction.DESTROY);
 	}
 }

@@ -141,10 +141,10 @@
       "registry_name": "compressedbeaf",
       "metadata": {
         "files": [
-          "src/main/resources/assets/bebra_rofl_pov/models/block/compressedbeaf.json",
           "src/main/resources/assets/bebra_rofl_pov/blockstates/compressedbeaf.json",
+          "src/main/java/net/mcreator/bebraroflpov/block/CompressedbeafBlock.java",
           "src/main/resources/assets/bebra_rofl_pov/models/item/compressedbeaf.json",
-          "src/main/java/net/mcreator/bebraroflpov/block/CompressedbeafBlock.java"
+          "src/main/resources/assets/bebra_rofl_pov/models/block/compressedbeaf.json"
         ]
       },
       "path": "~/Other hueta"
@@ -202,20 +202,67 @@
       "path": "~/Other hueta"
     },
     {
-      "name": "IaDYRIaVYIPIDORAS",
-      "type": "block",
+      "name": "AK47Ammo",
+      "type": "item",
       "sortid": 10,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "ia_dyr_ia_vyipidoras",
+      "registry_name": "ak_47_ammo",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/bebraroflpov/block/IaDYRIaVYIPIDORASBlock.java",
-          "src/main/resources/assets/bebra_rofl_pov/blockstates/ia_dyr_ia_vyipidoras.json",
-          "src/main/resources/assets/bebra_rofl_pov/models/block/ia_dyr_ia_vyipidoras.json",
-          "src/main/resources/assets/bebra_rofl_pov/models/item/ia_dyr_ia_vyipidoras.json"
+          "src/main/resources/assets/bebra_rofl_pov/models/item/ak_47_ammo.json",
+          "src/main/java/net/mcreator/bebraroflpov/item/AK47AmmoItem.java"
         ]
-      }
+      },
+      "path": "~/Other hueta"
+    },
+    {
+      "name": "AK47",
+      "type": "rangeditem",
+      "sortid": 11,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ak_47",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/bebraroflpov/item/AK47Item.java",
+          "src/main/java/net/mcreator/bebraroflpov/entity/AK47Entity.java",
+          "src/main/resources/assets/bebra_rofl_pov/models/item/ak_47.json"
+        ]
+      },
+      "path": "~/Other hueta"
+    },
+    {
+      "name": "AK47WhileProjectileFlyingTick",
+      "type": "procedure",
+      "sortid": 12,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ak_47_while_projectile_flying_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/bebraroflpov/procedures/AK47WhileProjectileFlyingTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Other hueta"
     }
   ],
   "variable_elements": [],
@@ -229,11 +276,19 @@
       "subtitle": "PISUNCHIK"
     },
     {
+      "name": "ak_fire",
+      "files": [
+        "ak47_fire"
+      ],
+      "category": "player",
+      "subtitle": "Shot from AK-47"
+    },
+    {
       "name": "allah",
       "files": [
         "allah-akbar"
       ],
-      "category": "neutral",
+      "category": "hostile",
       "subtitle": ""
     }
   ],
@@ -241,12 +296,14 @@
     "en_us": {
       "subtitles.allah": "",
       "biome.bebra_rofl_pov.gazadesert": "Gazadesert",
+      "item.bebra_rofl_pov.ak_47": "AK-47",
+      "subtitles.ak_fire": "Shot from AK-47",
+      "subtitles.govnida": "PISUNCHIK",
+      "block.bebra_rofl_pov.compressedbeaf": "Compressed Beaf",
+      "item.bebra_rofl_pov.ak_47_ammo": "AK-47 Ammo",
       "item.bebra_rofl_pov.dvorecvgelendshike.desc": "govnida",
       "entity.bebra_rofl_pov.hamas": "Hamas",
       "item.bebra_rofl_pov.hamas_spawn_egg": "Hamas Spawn Egg",
-      "subtitles.govnida": "PISUNCHIK",
-      "block.bebra_rofl_pov.compressedbeaf": "Compressedbeaf",
-      "block.bebra_rofl_pov.ia_dyr_ia_vyipidoras": "Ia DYR Ia VYIPIDORAS",
       "item.bebra_rofl_pov.dvorecvgelendshike": "Dvorecvgelendshike",
       "item.bebra_rofl_pov.gaza": "Gaza Portal Igniter"
     }

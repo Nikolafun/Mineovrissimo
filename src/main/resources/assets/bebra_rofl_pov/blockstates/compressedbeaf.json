@@ -1,7 +1,27 @@
 {
   "variants": {
-    "": {
+    "facing=north": {
       "model": "bebra_rofl_pov:block/compressedbeaf"
+    },
+    "facing=east": {
+      "model": "bebra_rofl_pov:block/compressedbeaf",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "bebra_rofl_pov:block/compressedbeaf",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "bebra_rofl_pov:block/compressedbeaf",
+      "y": 270
+    },
+    "facing=up": {
+      "model": "bebra_rofl_pov:block/compressedbeaf",
+      "x": 270
+    },
+    "facing=down": {
+      "model": "bebra_rofl_pov:block/compressedbeaf",
+      "x": 90
     }
   }
 }
