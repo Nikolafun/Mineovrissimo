@@ -6,7 +6,6 @@ import net.minecraft.world.item.UseAnim;
 import net.minecraft.world.item.ProjectileWeaponItem;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.entity.projectile.AbstractArrow;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.ai.attributes.Attributes;
@@ -19,6 +18,7 @@ import net.minecraft.world.InteractionResult;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.server.level.ServerPlayer;
 
+import net.mcreator.bebraroflpov.init.BebraRoflPovModTabs;
 import net.mcreator.bebraroflpov.init.BebraRoflPovModItems;
 import net.mcreator.bebraroflpov.entity.AK47Entity;
 
@@ -27,7 +27,7 @@ import com.google.common.collect.ImmutableMultimap;
 
 public class AK47Item extends Item {
 	public AK47Item() {
-		super(new Item.Properties().tab(CreativeModeTab.TAB_COMBAT).durability(100));
+		super(new Item.Properties().tab(BebraRoflPovModTabs.TAB_CREATIVE_TAB).durability(100));
 	}
 
 	@Override

@@ -191,6 +191,7 @@
     {
       "name": "Gazadesert",
       "type": "biome",
+      "sortid": 27,
       "compiles": true,
       "locked_code": false,
       "registry_name": "gazadesert",
@@ -380,6 +381,7 @@
     {
       "name": "Evreitrade",
       "type": "villagerprofession",
+      "sortid": 28,
       "compiles": true,
       "locked_code": false,
       "registry_name": "evreitrade",
@@ -438,6 +440,7 @@
     {
       "name": "Evreitrader",
       "type": "villagertrade",
+      "sortid": 29,
       "compiles": true,
       "locked_code": false,
       "registry_name": "evreitrader",
@@ -449,6 +452,7 @@
     {
       "name": "Hmashead",
       "type": "loottable",
+      "sortid": 30,
       "compiles": true,
       "locked_code": false,
       "registry_name": "hmashead",
@@ -629,6 +633,17 @@
         ]
       },
       "path": "~/Other hueta"
+    },
+    {
+      "name": "CreativeTab",
+      "type": "tab",
+      "sortid": 31,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "creative_tab",
+      "metadata": {
+        "files": []
+      }
     }
   ],
   "variable_elements": [],
@@ -667,6 +682,35 @@
     }
   ],
   "language_map": {
+    "ru_ru": {
+      "subtitles.ak_fire": "Выстрел из AK-47",
+      "entity.bebra_rofl_pov.hamascreeper": "Hamascreeper",
+      "block.bebra_rofl_pov.compressedbeaf": "Compressed Beaf",
+      "item.bebra_rofl_pov.hamashead": "Hamashead",
+      "entity.bebra_rofl_pov.yayko": "Yayko",
+      "entity.bebra_rofl_pov.hamas": "Hamas",
+      "block.bebra_rofl_pov.hitlerblock": "Hitlerblock",
+      "item.bebra_rofl_pov.hamas_spawn_egg": "Hamas Spawn Egg",
+      "block.bebra_rofl_pov.banderik": "Banderik",
+      "item.bebra_rofl_pov.dvorecvgelendshike": "Dvorecvgelendshike",
+      "item.bebra_rofl_pov.gaza": "Gaza Portal Igniter",
+      "item.bebra_rofl_pov.evrei_spawn_egg": "Evrei Spawn Egg",
+      "item.bebra_rofl_pov.hitler": "Hitler",
+      "item.bebra_rofl_pov.hamascreeper_spawn_egg": "Hamascreeper Spawn Egg",
+      "subtitles.allah": "",
+      "biome.bebra_rofl_pov.gazadesert": "Gazadesert",
+      "item.bebra_rofl_pov.ak_47": "AK-47",
+      "subtitles.podlaya_musica": "",
+      "item.bebra_rofl_pov.evreeshigator": "Evreeszhigator",
+      "subtitles.govnida": "PISUNCHIK",
+      "block.bebra_rofl_pov.ia_dyr_ia_vyipidoras": "Ia DYR Ia VYIPIDORAS",
+      "itemGroup.tabcreative_tab": "Ночной кошмар ашана",
+      "item.bebra_rofl_pov.ak_47_ammo": "AK-47 Ammo",
+      "entity.minecraft.villager.bebra_rofl_pov.evreitrade": "Evreitrade",
+      "item.bebra_rofl_pov.dvorecvgelendshike.desc": "govnida",
+      "entity.bebra_rofl_pov.evrei": "Evrei",
+      "item.bebra_rofl_pov.yayko_spawn_egg": "Yayko Spawn Egg"
+    },
     "en_us": {
       "subtitles.ak_fire": "Shot from AK-47",
       "entity.bebra_rofl_pov.hamascreeper": "Hamascreeper",
@@ -689,6 +733,7 @@
       "item.bebra_rofl_pov.evreeshigator": "Evreeszhigator",
       "subtitles.govnida": "PISUNCHIK",
       "block.bebra_rofl_pov.ia_dyr_ia_vyipidoras": "Ia DYR Ia VYIPIDORAS",
+      "itemGroup.tabcreative_tab": "Ночной кошмар ашана",
       "item.bebra_rofl_pov.ak_47_ammo": "AK-47 Ammo",
       "entity.minecraft.villager.bebra_rofl_pov.evreitrade": "Evreitrade",
       "item.bebra_rofl_pov.dvorecvgelendshike.desc": "govnida",

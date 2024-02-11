@@ -3,12 +3,12 @@
   "_type": "rangeditem",
   "definition": {
     "renderType": 0,
-    "texture": "biezimkhuiiennii",
+    "texture": "olfn",
     "customModelName": "Normal",
     "name": "Evreeszhigator",
     "specialInfo": [],
     "creativeTab": {
-      "value": "COMBAT"
+      "value": "CUSTOM:CreativeTab"
     },
     "stackSize": 1,
     "ammoItem": {
