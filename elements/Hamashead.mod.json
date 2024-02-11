@@ -8,7 +8,7 @@
     "name": "Hamashead",
     "rarity": "COMMON",
     "creativeTab": {
-      "value": "FOOD"
+      "value": "CUSTOM:CreativeTab"
     },
     "stackSize": 64,
     "enchantability": 0,

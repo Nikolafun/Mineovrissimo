@@ -30,6 +30,7 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.FriendlyByteBuf;
 
 import net.mcreator.bebraroflpov.init.BebraRoflPovModVillagerProfessions;
+import net.mcreator.bebraroflpov.init.BebraRoflPovModTabs;
 import net.mcreator.bebraroflpov.init.BebraRoflPovModSounds;
 import net.mcreator.bebraroflpov.init.BebraRoflPovModPaintings;
 import net.mcreator.bebraroflpov.init.BebraRoflPovModItems;
@@ -53,7 +54,7 @@ public class BebraRoflPovMod {
 
 	public BebraRoflPovMod() {
 		MinecraftForge.EVENT_BUS.register(this);
-
+		BebraRoflPovModTabs.load();
 		IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
 		BebraRoflPovModSounds.REGISTRY.register(bus);
 		BebraRoflPovModBlocks.REGISTRY.register(bus);

@@ -8,7 +8,7 @@
     "name": "Hitler",
     "rarity": "COMMON",
     "creativeTab": {
-      "value": "MATERIALS"
+      "value": "CUSTOM:CreativeTab"
     },
     "stackSize": 64,
     "enchantability": 0,

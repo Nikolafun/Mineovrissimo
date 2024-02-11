@@ -6,7 +6,7 @@
     "texture": "discord_pnn0gduku6",
     "description": "govnida",
     "creativeTab": {
-      "value": "REDSTONE"
+      "value": "CUSTOM:CreativeTab"
     },
     "specialInfo": [],
     "hasGlow": false,
