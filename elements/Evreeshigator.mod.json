@@ -3,41 +3,44 @@
   "_type": "rangeditem",
   "definition": {
     "renderType": 0,
-    "texture": "olfn",
+    "texture": "biezimkhuiiennii",
     "customModelName": "Normal",
-    "name": "Евреесжигатор",
+    "name": "Evreeszhigator",
     "specialInfo": [],
     "creativeTab": {
       "value": "COMBAT"
     },
     "stackSize": 1,
     "ammoItem": {
-      "value": "CUSTOM:AK47Ammo"
+      "value": ""
     },
     "shootConstantly": true,
-    "usageCount": 450,
+    "usageCount": 1000,
     "actionSound": {
-      "value": "CUSTOM:podlaya_musica"
+      "value": "item.flintandsteel.use"
     },
     "hasGlow": false,
     "animation": "none",
     "enableMeleeDamage": true,
-    "damageVsEntity": 10.0,
+    "damageVsEntity": 2.0,
     "bulletPower": 3.0,
     "bulletDamage": 3.0,
     "bulletKnockback": 1,
     "bulletParticles": false,
-    "bulletIgnitesFire": false,
+    "bulletIgnitesFire": true,
     "bulletItemTexture": {
-      "value": "CUSTOM:AK47Ammo"
+      "value": "Items.LAVA_BUCKET"
     },
     "bulletModel": "Default",
     "customBulletModelTexture": "",
     "onBulletHitsBlock": {
       "name": "EvreeshigatorProjectileHitsBlock"
     },
+    "onBulletHitsEntity": {
+      "name": "EvreeshigatorProjectileHitsBlock"
+    },
     "onBulletFlyingTick": {
-      "name": "AK47WhileProjectileFlyingTick"
+      "name": "EvreeshigatorWhileProjectileFlyingTick"
     }
   }
 }

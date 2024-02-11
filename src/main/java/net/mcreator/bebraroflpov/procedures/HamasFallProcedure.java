@@ -9,9 +9,9 @@ public class HamasFallProcedure {
 			return;
 		{
 			Entity _ent = entity;
-			_ent.teleportTo(x, (y + 70), z);
+			_ent.teleportTo(x, (y + 200), z);
 			if (_ent instanceof ServerPlayer _serverPlayer)
-				_serverPlayer.connection.teleport(x, (y + 70), z, _ent.getYRot(), _ent.getXRot());
+				_serverPlayer.connection.teleport(x, (y + 200), z, _ent.getYRot(), _ent.getXRot());
 		}
 	}
 }

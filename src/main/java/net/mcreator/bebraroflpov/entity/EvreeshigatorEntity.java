@@ -7,8 +7,10 @@ import net.minecraftforge.network.NetworkHooks;
 import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.api.distmarker.Dist;
 
+import net.minecraft.world.phys.EntityHitResult;
 import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.level.Level;
+import net.minecraft.world.item.Items;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.projectile.ItemSupplier;
 import net.minecraft.world.entity.projectile.AbstractArrow;
@@ -19,9 +21,8 @@ import net.minecraft.sounds.SoundSource;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.protocol.Packet;
 
+import net.mcreator.bebraroflpov.procedures.EvreeshigatorWhileProjectileFlyingTickProcedure;
 import net.mcreator.bebraroflpov.procedures.EvreeshigatorProjectileHitsBlockProcedure;
-import net.mcreator.bebraroflpov.procedures.AK47WhileProjectileFlyingTickProcedure;
-import net.mcreator.bebraroflpov.init.BebraRoflPovModItems;
 import net.mcreator.bebraroflpov.init.BebraRoflPovModEntities;
 
 @OnlyIn(value = Dist.CLIENT, _interface = ItemSupplier.class)
@@ -50,18 +51,24 @@ public class EvreeshigatorEntity extends AbstractArrow implements ItemSupplier {
 	@Override
 	@OnlyIn(Dist.CLIENT)
 	public ItemStack getItem() {
-		return new ItemStack(BebraRoflPovModItems.AK_47_AMMO.get());
+		return new ItemStack(Items.LAVA_BUCKET);
 	}
 
 	@Override
 	protected ItemStack getPickupItem() {
-		return new ItemStack(BebraRoflPovModItems.AK_47_AMMO.get());
+		return ItemStack.EMPTY;
 	}
 
 	@Override
 	protected void doPostHurtEffects(LivingEntity entity) {
 		super.doPostHurtEffects(entity);
 		entity.setArrowCount(entity.getArrowCount() - 1);
+	}
+
+	@Override
+	public void onHitEntity(EntityHitResult entityHitResult) {
+		super.onHitEntity(entityHitResult);
+		EvreeshigatorProjectileHitsBlockProcedure.execute(this.level, this.getX(), this.getY(), this.getZ());
 	}
 
 	@Override
@@ -73,7 +80,7 @@ public class EvreeshigatorEntity extends AbstractArrow implements ItemSupplier {
 	@Override
 	public void tick() {
 		super.tick();
-		AK47WhileProjectileFlyingTickProcedure.execute(this.level, this.getX(), this.getY(), this.getZ());
+		EvreeshigatorWhileProjectileFlyingTickProcedure.execute(this.level, this.getX(), this.getY(), this.getZ(), this.getOwner());
 		if (this.inGround)
 			this.discard();
 	}
@@ -85,8 +92,9 @@ public class EvreeshigatorEntity extends AbstractArrow implements ItemSupplier {
 		entityarrow.setCritArrow(false);
 		entityarrow.setBaseDamage(damage);
 		entityarrow.setKnockback(knockback);
+		entityarrow.setSecondsOnFire(100);
 		world.addFreshEntity(entityarrow);
-		world.playSound(null, entity.getX(), entity.getY(), entity.getZ(), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("bebra_rofl_pov:podlaya_musica")), SoundSource.PLAYERS, 1, 1f / (random.nextFloat() * 0.5f + 1) + (power / 2));
+		world.playSound(null, entity.getX(), entity.getY(), entity.getZ(), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("item.flintandsteel.use")), SoundSource.PLAYERS, 1, 1f / (random.nextFloat() * 0.5f + 1) + (power / 2));
 		return entityarrow;
 	}
 
@@ -100,9 +108,9 @@ public class EvreeshigatorEntity extends AbstractArrow implements ItemSupplier {
 		entityarrow.setBaseDamage(3);
 		entityarrow.setKnockback(1);
 		entityarrow.setCritArrow(false);
+		entityarrow.setSecondsOnFire(100);
 		entity.level.addFreshEntity(entityarrow);
-		entity.level.playSound(null, entity.getX(), entity.getY(), entity.getZ(), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("bebra_rofl_pov:podlaya_musica")), SoundSource.PLAYERS, 1,
-				1f / (RandomSource.create().nextFloat() * 0.5f + 1));
+		entity.level.playSound(null, entity.getX(), entity.getY(), entity.getZ(), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("item.flintandsteel.use")), SoundSource.PLAYERS, 1, 1f / (RandomSource.create().nextFloat() * 0.5f + 1));
 		return entityarrow;
 	}
 }

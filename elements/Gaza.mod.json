@@ -4,7 +4,7 @@
   "definition": {
     "biomesInDimension": [
       {
-        "value": "CUSTOM:Gazadesert"
+        "value": "desert"
       }
     ],
     "worldGenType": "Normal world gen",
@@ -15,11 +15,11 @@
       "value": "Blocks.SANDSTONE#2"
     },
     "canRespawnHere": false,
-    "hasFog": true,
+    "hasFog": false,
     "isDark": false,
     "doesWaterVaporize": false,
     "sleepResult": "ALLOW",
-    "hasSkyLight": true,
+    "hasSkyLight": false,
     "imitateOverworldBehaviour": false,
     "onPlayerEntersDimension": {
       "name": "GazaPlayerEntersDimension"
@@ -40,7 +40,7 @@
       "value": "TOOLS"
     },
     "texture": "discord_pnn0gduku6",
-    "portalTexture": "z",
+    "portalTexture": "gasa_portal",
     "enablePortal": true,
     "whenPortaTriggerlUsed": {
       "name": "GazaPortalTriggerUsed"

@@ -3,7 +3,6 @@ package net.mcreator.bebraroflpov.item;
 
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.UseAnim;
-import net.minecraft.world.item.ProjectileWeaponItem;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.CreativeModeTab;
@@ -19,7 +18,6 @@ import net.minecraft.world.InteractionResult;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.server.level.ServerPlayer;
 
-import net.mcreator.bebraroflpov.init.BebraRoflPovModItems;
 import net.mcreator.bebraroflpov.entity.EvreeshigatorEntity;
 
 import com.google.common.collect.Multimap;
@@ -27,7 +25,7 @@ import com.google.common.collect.ImmutableMultimap;
 
 public class EvreeshigatorItem extends Item {
 	public EvreeshigatorItem() {
-		super(new Item.Properties().tab(CreativeModeTab.TAB_COMBAT).durability(450));
+		super(new Item.Properties().tab(CreativeModeTab.TAB_COMBAT).durability(1000));
 	}
 
 	@Override
@@ -51,7 +49,7 @@ public class EvreeshigatorItem extends Item {
 		if (slot == EquipmentSlot.MAINHAND) {
 			ImmutableMultimap.Builder<Attribute, AttributeModifier> builder = ImmutableMultimap.builder();
 			builder.putAll(super.getDefaultAttributeModifiers(slot));
-			builder.put(Attributes.ATTACK_DAMAGE, new AttributeModifier(BASE_ATTACK_DAMAGE_UUID, "Ranged item modifier", (double) 8, AttributeModifier.Operation.ADDITION));
+			builder.put(Attributes.ATTACK_DAMAGE, new AttributeModifier(BASE_ATTACK_DAMAGE_UUID, "Ranged item modifier", (double) 0, AttributeModifier.Operation.ADDITION));
 			builder.put(Attributes.ATTACK_SPEED, new AttributeModifier(BASE_ATTACK_SPEED_UUID, "Ranged item modifier", -2.4, AttributeModifier.Operation.ADDITION));
 			return builder.build();
 		}
@@ -66,36 +64,9 @@ public class EvreeshigatorItem extends Item {
 			double y = entity.getY();
 			double z = entity.getZ();
 			if (true) {
-				ItemStack stack = ProjectileWeaponItem.getHeldProjectile(entity, e -> e.getItem() == BebraRoflPovModItems.AK_47_AMMO.get());
-				if (stack == ItemStack.EMPTY) {
-					for (int i = 0; i < entity.getInventory().items.size(); i++) {
-						ItemStack teststack = entity.getInventory().items.get(i);
-						if (teststack != null && teststack.getItem() == BebraRoflPovModItems.AK_47_AMMO.get()) {
-							stack = teststack;
-							break;
-						}
-					}
-				}
-				if (entity.getAbilities().instabuild || stack != ItemStack.EMPTY) {
-					EvreeshigatorEntity entityarrow = EvreeshigatorEntity.shoot(world, entity, world.getRandom(), 3f, 3, 1);
-					itemstack.hurtAndBreak(1, entity, e -> e.broadcastBreakEvent(entity.getUsedItemHand()));
-					if (entity.getAbilities().instabuild) {
-						entityarrow.pickup = AbstractArrow.Pickup.CREATIVE_ONLY;
-					} else {
-						if (new ItemStack(BebraRoflPovModItems.AK_47_AMMO.get()).isDamageableItem()) {
-							if (stack.hurt(1, world.getRandom(), entity)) {
-								stack.shrink(1);
-								stack.setDamageValue(0);
-								if (stack.isEmpty())
-									entity.getInventory().removeItem(stack);
-							}
-						} else {
-							stack.shrink(1);
-							if (stack.isEmpty())
-								entity.getInventory().removeItem(stack);
-						}
-					}
-				}
+				EvreeshigatorEntity entityarrow = EvreeshigatorEntity.shoot(world, entity, world.getRandom(), 3f, 3, 1);
+				itemstack.hurtAndBreak(1, entity, e -> e.broadcastBreakEvent(entity.getUsedItemHand()));
+				entityarrow.pickup = AbstractArrow.Pickup.DISALLOWED;
 				entity.releaseUsingItem();
 			}
 		}

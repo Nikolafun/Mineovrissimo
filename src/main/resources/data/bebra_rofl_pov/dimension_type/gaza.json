@@ -5,7 +5,7 @@
   "respawn_anchor_works": false,
   "bed_works": true,
   "has_raids": false,
-  "has_skylight": true,
+  "has_skylight": false,
   "has_ceiling": false,
   "coordinate_scale": 1,
   "ambient_light": 0.5,
@@ -21,5 +21,5 @@
     }
   },
   "monster_spawn_block_light_limit": 0,
-  "effects": "minecraft:the_nether"
+  "effects": "minecraft:overworld"
 }

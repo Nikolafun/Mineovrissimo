@@ -6,7 +6,7 @@
       "type": "minecraft:multi_noise",
       "biomes": [
         {
-          "biome": "bebra_rofl_pov:gazadesert",
+          "biome": "desert",
           "parameters": {
             "temperature": 0,
             "humidity": 0,
@@ -380,7 +380,7 @@
             "if_true": {
               "type": "minecraft:biome",
               "biome_is": [
-                "bebra_rofl_pov:gazadesert"
+                "desert"
               ]
             },
             "then_run": {
@@ -421,10 +421,7 @@
                         {
                           "type": "minecraft:block",
                           "result_state": {
-                            "Name": "minecraft:lava",
-                            "Properties": {
-                              "level": "0"
-                            }
+                            "Name": "minecraft:gravel"
                           }
                         }
                       ]
@@ -442,7 +439,7 @@
                     "then_run": {
                       "type": "minecraft:block",
                       "result_state": {
-                        "Name": "minecraft:dirt"
+                        "Name": "minecraft:sand"
                       }
                     }
                   }

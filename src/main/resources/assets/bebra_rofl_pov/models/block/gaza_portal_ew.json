@@ -1,7 +1,7 @@
 {
   "textures": {
-    "particle": "bebra_rofl_pov:blocks/z",
-    "portal": "bebra_rofl_pov:blocks/z"
+    "particle": "bebra_rofl_pov:blocks/gasa_portal",
+    "portal": "bebra_rofl_pov:blocks/gasa_portal"
   },
   "elements": [
     {
