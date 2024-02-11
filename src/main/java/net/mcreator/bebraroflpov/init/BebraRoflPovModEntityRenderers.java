@@ -11,6 +11,7 @@ import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.client.renderer.entity.ThrownItemRenderer;
 
+import net.mcreator.bebraroflpov.client.renderer.YaykoRenderer;
 import net.mcreator.bebraroflpov.client.renderer.HamascreeperRenderer;
 import net.mcreator.bebraroflpov.client.renderer.HamasRenderer;
 import net.mcreator.bebraroflpov.client.renderer.EvreiRenderer;
@@ -24,5 +25,6 @@ public class BebraRoflPovModEntityRenderers {
 		event.registerEntityRenderer(BebraRoflPovModEntities.EVREESHIGATOR.get(), ThrownItemRenderer::new);
 		event.registerEntityRenderer(BebraRoflPovModEntities.EVREI.get(), EvreiRenderer::new);
 		event.registerEntityRenderer(BebraRoflPovModEntities.HAMASCREEPER.get(), HamascreeperRenderer::new);
+		event.registerEntityRenderer(BebraRoflPovModEntities.YAYKO.get(), YaykoRenderer::new);
 	}
 }

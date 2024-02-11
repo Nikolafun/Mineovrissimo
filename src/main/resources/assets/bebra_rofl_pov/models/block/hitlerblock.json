@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "bebra_rofl_pov:blocks/nazi_swastika.svg",
+    "up": "bebra_rofl_pov:blocks/nazi_swastika.svg",
+    "north": "bebra_rofl_pov:blocks/nazi_swastika.svg",
+    "east": "bebra_rofl_pov:blocks/nazi_swastika.svg",
+    "south": "bebra_rofl_pov:blocks/nazi_swastika.svg",
+    "west": "bebra_rofl_pov:blocks/nazi_swastika.svg",
+    "particle": "bebra_rofl_pov:blocks/nazi_swastika.svg"
+  },
+  "render_type": "solid"
+}

@@ -477,6 +477,54 @@
         ]
       },
       "path": "~/Ukraine"
+    },
+    {
+      "name": "Yayko",
+      "type": "livingentity",
+      "sortid": 21,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "yayko",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/bebraroflpov/entity/YaykoEntity.java",
+          "src/main/java/net/mcreator/bebraroflpov/client/renderer/YaykoRenderer.java",
+          "src/main/resources/assets/bebra_rofl_pov/models/item/yayko_spawn_egg.json",
+          "src/main/resources/data/bebra_rofl_pov/forge/biome_modifier/yayko_biome_modifier.json"
+        ]
+      }
+    },
+    {
+      "name": "Hitler",
+      "type": "item",
+      "sortid": 22,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hitler",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/bebra_rofl_pov/models/item/hitler.json",
+          "src/main/java/net/mcreator/bebraroflpov/item/HitlerItem.java"
+        ]
+      },
+      "path": "~/Germany"
+    },
+    {
+      "name": "Hitlerblock",
+      "type": "block",
+      "sortid": 23,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hitlerblock",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/bebra_rofl_pov/blockstates/hitlerblock.json",
+          "src/main/resources/assets/bebra_rofl_pov/models/block/hitlerblock.json",
+          "src/main/java/net/mcreator/bebraroflpov/block/HitlerblockBlock.java",
+          "src/main/resources/assets/bebra_rofl_pov/models/item/hitlerblock.json"
+        ]
+      },
+      "path": "~/Germany"
     }
   ],
   "variable_elements": [],
@@ -516,28 +564,32 @@
   ],
   "language_map": {
     "en_us": {
-      "subtitles.allah": "",
-      "biome.bebra_rofl_pov.gazadesert": "Gazadesert",
-      "item.bebra_rofl_pov.ak_47": "AK-47",
       "subtitles.ak_fire": "Shot from AK-47",
       "entity.bebra_rofl_pov.hamascreeper": "Hamascreeper",
-      "subtitles.govnida": "PISUNCHIK",
       "block.bebra_rofl_pov.compressedbeaf": "Compressed Beaf",
-      "item.bebra_rofl_pov.evreeshigator": "Евреесжигатор",
-      "subtitles.podlaya_musica": "",
       "item.bebra_rofl_pov.hamashead": "Hamashead",
-      "block.bebra_rofl_pov.ia_dyr_ia_vyipidoras": "Ia DYR Ia VYIPIDORAS",
-      "item.bebra_rofl_pov.ak_47_ammo": "AK-47 Ammo",
-      "entity.minecraft.villager.bebra_rofl_pov.evreitrade": "Evreitrade",
-      "item.bebra_rofl_pov.dvorecvgelendshike.desc": "govnida",
+      "entity.bebra_rofl_pov.yayko": "Yayko",
       "entity.bebra_rofl_pov.hamas": "Hamas",
+      "block.bebra_rofl_pov.hitlerblock": "Hitlerblock",
       "item.bebra_rofl_pov.hamas_spawn_egg": "Hamas Spawn Egg",
-      "entity.bebra_rofl_pov.evrei": "Evrei",
       "block.bebra_rofl_pov.banderik": "Banderik",
       "item.bebra_rofl_pov.dvorecvgelendshike": "Dvorecvgelendshike",
       "item.bebra_rofl_pov.gaza": "Gaza Portal Igniter",
       "item.bebra_rofl_pov.evrei_spawn_egg": "Evrei Spawn Egg",
-      "item.bebra_rofl_pov.hamascreeper_spawn_egg": "Hamascreeper Spawn Egg"
+      "item.bebra_rofl_pov.hitler": "Hitler",
+      "item.bebra_rofl_pov.hamascreeper_spawn_egg": "Hamascreeper Spawn Egg",
+      "subtitles.allah": "",
+      "biome.bebra_rofl_pov.gazadesert": "Gazadesert",
+      "item.bebra_rofl_pov.ak_47": "AK-47",
+      "subtitles.podlaya_musica": "",
+      "item.bebra_rofl_pov.evreeshigator": "Евреесжигатор",
+      "subtitles.govnida": "PISUNCHIK",
+      "block.bebra_rofl_pov.ia_dyr_ia_vyipidoras": "Ia DYR Ia VYIPIDORAS",
+      "item.bebra_rofl_pov.ak_47_ammo": "AK-47 Ammo",
+      "entity.minecraft.villager.bebra_rofl_pov.evreitrade": "Evreitrade",
+      "item.bebra_rofl_pov.dvorecvgelendshike.desc": "govnida",
+      "entity.bebra_rofl_pov.evrei": "Evrei",
+      "item.bebra_rofl_pov.yayko_spawn_egg": "Yayko Spawn Egg"
     }
   },
   "foldersRoot": {
@@ -557,6 +609,10 @@
       },
       {
         "name": "Ukraine",
+        "children": []
+      },
+      {
+        "name": "Germany",
         "children": []
       }
     ]

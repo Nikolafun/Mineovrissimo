@@ -15,6 +15,7 @@ import net.minecraftforge.api.distmarker.Dist;
 import net.minecraft.world.level.block.Block;
 
 import net.mcreator.bebraroflpov.block.IaDYRIaVYIPIDORASBlock;
+import net.mcreator.bebraroflpov.block.HitlerblockBlock;
 import net.mcreator.bebraroflpov.block.GazaPortalBlock;
 import net.mcreator.bebraroflpov.block.CompressedbeafBlock;
 import net.mcreator.bebraroflpov.block.BanderikBlock;
@@ -26,6 +27,7 @@ public class BebraRoflPovModBlocks {
 	public static final RegistryObject<Block> COMPRESSEDBEAF = REGISTRY.register("compressedbeaf", () -> new CompressedbeafBlock());
 	public static final RegistryObject<Block> IA_DYR_IA_VYIPIDORAS = REGISTRY.register("ia_dyr_ia_vyipidoras", () -> new IaDYRIaVYIPIDORASBlock());
 	public static final RegistryObject<Block> BANDERIK = REGISTRY.register("banderik", () -> new BanderikBlock());
+	public static final RegistryObject<Block> HITLERBLOCK = REGISTRY.register("hitlerblock", () -> new HitlerblockBlock());
 
 	@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 	public static class ClientSideHandler {

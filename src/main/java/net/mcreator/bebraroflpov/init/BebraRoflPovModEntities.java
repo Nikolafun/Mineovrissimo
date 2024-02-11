@@ -16,6 +16,7 @@ import net.minecraft.world.entity.MobCategory;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.Entity;
 
+import net.mcreator.bebraroflpov.entity.YaykoEntity;
 import net.mcreator.bebraroflpov.entity.HamascreeperEntity;
 import net.mcreator.bebraroflpov.entity.HamasEntity;
 import net.mcreator.bebraroflpov.entity.EvreiEntity;
@@ -42,6 +43,10 @@ public class BebraRoflPovModEntities {
 			EntityType.Builder.<HamascreeperEntity>of(HamascreeperEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(HamascreeperEntity::new)
 
 					.sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<YaykoEntity>> YAYKO = register("yayko",
+			EntityType.Builder.<YaykoEntity>of(YaykoEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(YaykoEntity::new)
+
+					.sized(0.6f, 1.8f));
 
 	private static <T extends Entity> RegistryObject<EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
 		return REGISTRY.register(registryname, () -> (EntityType<T>) entityTypeBuilder.build(registryname));
@@ -53,6 +58,7 @@ public class BebraRoflPovModEntities {
 			HamasEntity.init();
 			EvreiEntity.init();
 			HamascreeperEntity.init();
+			YaykoEntity.init();
 		});
 	}
 
@@ -61,5 +67,6 @@ public class BebraRoflPovModEntities {
 		event.put(HAMAS.get(), HamasEntity.createAttributes().build());
 		event.put(EVREI.get(), EvreiEntity.createAttributes().build());
 		event.put(HAMASCREEPER.get(), HamascreeperEntity.createAttributes().build());
+		event.put(YAYKO.get(), YaykoEntity.createAttributes().build());
 	}
 }
