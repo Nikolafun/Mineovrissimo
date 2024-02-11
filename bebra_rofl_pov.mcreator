@@ -117,17 +117,17 @@
       "registry_name": "gaza",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/bebraroflpov/world/teleporter/GazaTeleporter.java",
-          "src/main/resources/assets/bebra_rofl_pov/models/block/gaza_portal_ns.json",
-          "src/main/java/net/mcreator/bebraroflpov/world/dimension/GazaDimension.java",
-          "src/main/java/net/mcreator/bebraroflpov/world/teleporter/GazaPortalShape.java",
+          "src/main/resources/assets/bebra_rofl_pov/models/block/gaza_portal_ew.json",
+          "src/main/resources/data/bebra_rofl_pov/dimension_type/gaza.json",
           "src/main/java/net/mcreator/bebraroflpov/block/GazaPortalBlock.java",
-          "src/main/resources/data/bebra_rofl_pov/dimension/gaza.json",
-          "src/main/resources/assets/bebra_rofl_pov/blockstates/gaza_portal.json",
+          "src/main/java/net/mcreator/bebraroflpov/world/teleporter/GazaTeleporter.java",
           "src/main/resources/assets/bebra_rofl_pov/models/item/gaza.json",
           "src/main/java/net/mcreator/bebraroflpov/item/GazaItem.java",
-          "src/main/resources/data/bebra_rofl_pov/dimension_type/gaza.json",
-          "src/main/resources/assets/bebra_rofl_pov/models/block/gaza_portal_ew.json"
+          "src/main/resources/assets/bebra_rofl_pov/blockstates/gaza_portal.json",
+          "src/main/resources/assets/bebra_rofl_pov/models/block/gaza_portal_ns.json",
+          "src/main/java/net/mcreator/bebraroflpov/world/teleporter/GazaPortalShape.java",
+          "src/main/resources/data/bebra_rofl_pov/dimension/gaza.json",
+          "src/main/java/net/mcreator/bebraroflpov/world/dimension/GazaDimension.java"
         ]
       },
       "path": "~/Other hueta"
@@ -273,9 +273,9 @@
       "registry_name": "evreeshigator",
       "metadata": {
         "files": [
-          "src/main/resources/assets/bebra_rofl_pov/models/item/evreeshigator.json",
+          "src/main/java/net/mcreator/bebraroflpov/item/EvreeshigatorItem.java",
           "src/main/java/net/mcreator/bebraroflpov/entity/EvreeshigatorEntity.java",
-          "src/main/java/net/mcreator/bebraroflpov/item/EvreeshigatorItem.java"
+          "src/main/resources/assets/bebra_rofl_pov/models/item/evreeshigator.json"
         ]
       },
       "path": "~/Other hueta"
@@ -321,9 +321,9 @@
       "registry_name": "ia_dyr_ia_vyipidoras",
       "metadata": {
         "files": [
+          "src/main/resources/assets/bebra_rofl_pov/models/block/ia_dyr_ia_vyipidoras.json",
           "src/main/java/net/mcreator/bebraroflpov/block/IaDYRIaVYIPIDORASBlock.java",
           "src/main/resources/assets/bebra_rofl_pov/blockstates/ia_dyr_ia_vyipidoras.json",
-          "src/main/resources/assets/bebra_rofl_pov/models/block/ia_dyr_ia_vyipidoras.json",
           "src/main/resources/assets/bebra_rofl_pov/models/item/ia_dyr_ia_vyipidoras.json"
         ]
       }
@@ -369,10 +369,10 @@
       "registry_name": "evrei",
       "metadata": {
         "files": [
-          "src/main/resources/data/bebra_rofl_pov/forge/biome_modifier/evrei_biome_modifier.json",
           "src/main/java/net/mcreator/bebraroflpov/entity/EvreiEntity.java",
-          "src/main/java/net/mcreator/bebraroflpov/client/renderer/EvreiRenderer.java",
-          "src/main/resources/assets/bebra_rofl_pov/models/item/evrei_spawn_egg.json"
+          "src/main/resources/assets/bebra_rofl_pov/models/item/evrei_spawn_egg.json",
+          "src/main/resources/data/bebra_rofl_pov/forge/biome_modifier/evrei_biome_modifier.json",
+          "src/main/java/net/mcreator/bebraroflpov/client/renderer/EvreiRenderer.java"
         ]
       },
       "path": "~/Mobs"
@@ -397,10 +397,10 @@
       "registry_name": "hamascreeper",
       "metadata": {
         "files": [
+          "src/main/resources/data/bebra_rofl_pov/forge/biome_modifier/hamascreeper_biome_modifier.json",
           "src/main/java/net/mcreator/bebraroflpov/entity/HamascreeperEntity.java",
           "src/main/java/net/mcreator/bebraroflpov/client/renderer/HamascreeperRenderer.java",
-          "src/main/resources/assets/bebra_rofl_pov/models/item/hamascreeper_spawn_egg.json",
-          "src/main/resources/data/bebra_rofl_pov/forge/biome_modifier/hamascreeper_biome_modifier.json"
+          "src/main/resources/assets/bebra_rofl_pov/models/item/hamascreeper_spawn_egg.json"
         ]
       },
       "path": "~/Mobs"
@@ -469,11 +469,11 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/bebra_rofl_pov/models/item/banderik.json",
-          "src/main/resources/assets/bebra_rofl_pov/blockstates/banderik.json",
           "src/main/resources/assets/bebra_rofl_pov/models/block/banderik.json",
-          "src/main/resources/assets/bebra_rofl_pov/models/block/banderik_inner.json",
+          "src/main/resources/assets/bebra_rofl_pov/models/block/banderik_outer.json",
+          "src/main/resources/assets/bebra_rofl_pov/blockstates/banderik.json",
           "src/main/java/net/mcreator/bebraroflpov/block/BanderikBlock.java",
-          "src/main/resources/assets/bebra_rofl_pov/models/block/banderik_outer.json"
+          "src/main/resources/assets/bebra_rofl_pov/models/block/banderik_inner.json"
         ]
       },
       "path": "~/Ukraine"
@@ -487,8 +487,8 @@
       "registry_name": "yayko",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/bebraroflpov/client/renderer/YaykoRenderer.java",
           "src/main/java/net/mcreator/bebraroflpov/entity/YaykoEntity.java",
+          "src/main/java/net/mcreator/bebraroflpov/client/renderer/YaykoRenderer.java",
           "src/main/resources/assets/bebra_rofl_pov/models/item/yayko_spawn_egg.json",
           "src/main/resources/data/bebra_rofl_pov/forge/biome_modifier/yayko_biome_modifier.json"
         ]
@@ -518,117 +518,13 @@
       "registry_name": "hitlerblock",
       "metadata": {
         "files": [
-          "src/main/resources/assets/bebra_rofl_pov/models/block/hitlerblock.json",
           "src/main/resources/assets/bebra_rofl_pov/blockstates/hitlerblock.json",
-          "src/main/resources/assets/bebra_rofl_pov/models/item/hitlerblock.json",
-          "src/main/java/net/mcreator/bebraroflpov/block/HitlerblockBlock.java"
+          "src/main/resources/assets/bebra_rofl_pov/models/block/hitlerblock.json",
+          "src/main/java/net/mcreator/bebraroflpov/block/HitlerblockBlock.java",
+          "src/main/resources/assets/bebra_rofl_pov/models/item/hitlerblock.json"
         ]
       },
       "path": "~/Germany"
-    },
-    {
-      "name": "HitlerblockUpdateTick",
-      "type": "procedure",
-      "sortid": 24,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "hitlerblock_update_tick",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/bebraroflpov/procedures/HitlerblockUpdateTickProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Germany"
-    },
-    {
-      "name": "EvreeshigatorWhileProjectileFlyingTick",
-      "type": "procedure",
-      "sortid": 25,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "evreeshigator_while_projectile_flying_tick",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/bebraroflpov/procedures/EvreeshigatorWhileProjectileFlyingTickProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Other hueta"
-    },
-    {
-      "name": "EvreeshigatorProjectileHitsLivingEntity",
-      "type": "procedure",
-      "sortid": 26,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "evreeshigator_projectile_hits_living_entity",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/bebraroflpov/procedures/EvreeshigatorProjectileHitsLivingEntityProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "immediatesourceentity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Other hueta"
     }
   ],
   "variable_elements": [],
@@ -686,7 +582,7 @@
       "biome.bebra_rofl_pov.gazadesert": "Gazadesert",
       "item.bebra_rofl_pov.ak_47": "AK-47",
       "subtitles.podlaya_musica": "",
-      "item.bebra_rofl_pov.evreeshigator": "Evreeszhigator",
+      "item.bebra_rofl_pov.evreeshigator": "Евреесжигатор",
       "subtitles.govnida": "PISUNCHIK",
       "block.bebra_rofl_pov.ia_dyr_ia_vyipidoras": "Ia DYR Ia VYIPIDORAS",
       "item.bebra_rofl_pov.ak_47_ammo": "AK-47 Ammo",
