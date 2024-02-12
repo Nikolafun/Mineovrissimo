@@ -181,38 +181,6 @@
             "type": "entity"
           },
           {
-            "name": "renderable",
-            "type": "logic"
-          },
-          {
-            "name": "camX",
-            "type": "number"
-          },
-          {
-            "name": "camY",
-            "type": "number"
-          },
-          {
-            "name": "camZ",
-            "type": "number"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "pose",
-            "type": "pose"
-          },
-          {
             "name": "world",
             "type": "world"
           }
@@ -666,8 +634,8 @@
   "language_map": {
     "ru_ru": {
       "subtitles.ak_fire": "Выстрел из AK-47",
-      "entity.bebra_rofl_pov.hamascreeper": "Hamascreeper",
       "entity.bebra_rofl_pov.hamasak_47": "Hamasak47",
+      "entity.bebra_rofl_pov.hamascreeper": "Hamascreeper",
       "block.bebra_rofl_pov.compressedbeaf": "Compressed Beaf",
       "item.bebra_rofl_pov.hamashead": "Hamashead",
       "item.bebra_rofl_pov.hamasak_47_spawn_egg": "Hamasak47 Spawn Egg",
@@ -699,8 +667,8 @@
     },
     "en_us": {
       "subtitles.ak_fire": "Shot from AK-47",
-      "entity.bebra_rofl_pov.hamascreeper": "Hamascreeper",
       "entity.bebra_rofl_pov.hamasak_47": "Hamasak47",
+      "entity.bebra_rofl_pov.hamascreeper": "Hamascreeper",
       "block.bebra_rofl_pov.compressedbeaf": "Compressed Beaf",
       "item.bebra_rofl_pov.hamashead": "Hamashead",
       "item.bebra_rofl_pov.hamasak_47_spawn_egg": "Hamasak47 Spawn Egg",
@@ -768,7 +736,9 @@
     "requiredMods": [],
     "dependencies": [],
     "dependants": [],
-    "mcreatorDependencies": [],
+    "mcreatorDependencies": [
+      "pehkui"
+    ],
     "currentGenerator": "forge-1.19.2",
     "credits": "Created using mod maker MCreator - https://mcreator.net/about",
     "modElementsPackage": "net.mcreator.bebraroflpov",
