@@ -13,8 +13,10 @@ import net.minecraft.client.renderer.entity.ThrownItemRenderer;
 
 import net.mcreator.bebraroflpov.client.renderer.YaykoRenderer;
 import net.mcreator.bebraroflpov.client.renderer.HamascreeperRenderer;
+import net.mcreator.bebraroflpov.client.renderer.Hamasak47Renderer;
 import net.mcreator.bebraroflpov.client.renderer.HamasRenderer;
 import net.mcreator.bebraroflpov.client.renderer.EvreiRenderer;
+import net.mcreator.bebraroflpov.client.renderer.AdolfHitlerRenderer;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 public class BebraRoflPovModEntityRenderers {
@@ -26,5 +28,7 @@ public class BebraRoflPovModEntityRenderers {
 		event.registerEntityRenderer(BebraRoflPovModEntities.EVREI.get(), EvreiRenderer::new);
 		event.registerEntityRenderer(BebraRoflPovModEntities.HAMASCREEPER.get(), HamascreeperRenderer::new);
 		event.registerEntityRenderer(BebraRoflPovModEntities.YAYKO.get(), YaykoRenderer::new);
+		event.registerEntityRenderer(BebraRoflPovModEntities.HAMASAK_47.get(), Hamasak47Renderer::new);
+		event.registerEntityRenderer(BebraRoflPovModEntities.ADOLF_HITLER.get(), AdolfHitlerRenderer::new);
 	}
 }

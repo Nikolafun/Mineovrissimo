@@ -26,7 +26,7 @@ public class GazaDimension {
 
 				@Override
 				public boolean isFoggyAt(int x, int y) {
-					return false;
+					return true;
 				}
 			};
 			event.enqueueWork(() -> DimensionSpecialEffects.EFFECTS.put(new ResourceLocation("bebra_rofl_pov:gaza"), customEffect));

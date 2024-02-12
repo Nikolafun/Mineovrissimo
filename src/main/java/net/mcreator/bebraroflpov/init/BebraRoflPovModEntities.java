@@ -18,9 +18,11 @@ import net.minecraft.world.entity.Entity;
 
 import net.mcreator.bebraroflpov.entity.YaykoEntity;
 import net.mcreator.bebraroflpov.entity.HamascreeperEntity;
+import net.mcreator.bebraroflpov.entity.Hamasak47Entity;
 import net.mcreator.bebraroflpov.entity.HamasEntity;
 import net.mcreator.bebraroflpov.entity.EvreiEntity;
 import net.mcreator.bebraroflpov.entity.EvreeshigatorEntity;
+import net.mcreator.bebraroflpov.entity.AdolfHitlerEntity;
 import net.mcreator.bebraroflpov.entity.AK47Entity;
 import net.mcreator.bebraroflpov.BebraRoflPovMod;
 
@@ -47,6 +49,14 @@ public class BebraRoflPovModEntities {
 			EntityType.Builder.<YaykoEntity>of(YaykoEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(YaykoEntity::new)
 
 					.sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<Hamasak47Entity>> HAMASAK_47 = register("hamasak_47",
+			EntityType.Builder.<Hamasak47Entity>of(Hamasak47Entity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(Hamasak47Entity::new)
+
+					.sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<AdolfHitlerEntity>> ADOLF_HITLER = register("adolf_hitler",
+			EntityType.Builder.<AdolfHitlerEntity>of(AdolfHitlerEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(AdolfHitlerEntity::new)
+
+					.sized(0.6f, 1.8f));
 
 	private static <T extends Entity> RegistryObject<EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
 		return REGISTRY.register(registryname, () -> (EntityType<T>) entityTypeBuilder.build(registryname));
@@ -59,6 +69,8 @@ public class BebraRoflPovModEntities {
 			EvreiEntity.init();
 			HamascreeperEntity.init();
 			YaykoEntity.init();
+			Hamasak47Entity.init();
+			AdolfHitlerEntity.init();
 		});
 	}
 
@@ -68,5 +80,7 @@ public class BebraRoflPovModEntities {
 		event.put(EVREI.get(), EvreiEntity.createAttributes().build());
 		event.put(HAMASCREEPER.get(), HamascreeperEntity.createAttributes().build());
 		event.put(YAYKO.get(), YaykoEntity.createAttributes().build());
+		event.put(HAMASAK_47.get(), Hamasak47Entity.createAttributes().build());
+		event.put(ADOLF_HITLER.get(), AdolfHitlerEntity.createAttributes().build());
 	}
 }

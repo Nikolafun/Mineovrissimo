@@ -568,6 +568,64 @@
       "metadata": {
         "files": []
       }
+    },
+    {
+      "name": "Hamasak47",
+      "type": "livingentity",
+      "sortid": 32,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hamasak_47",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/bebra_rofl_pov/models/item/hamasak_47_spawn_egg.json",
+          "src/main/java/net/mcreator/bebraroflpov/client/renderer/Hamasak47Renderer.java",
+          "src/main/java/net/mcreator/bebraroflpov/entity/Hamasak47Entity.java",
+          "src/main/resources/data/bebra_rofl_pov/forge/biome_modifier/hamasak_47_biome_modifier.json"
+        ]
+      },
+      "path": "~/Other hueta"
+    },
+    {
+      "name": "AdolfHitlerOnInitialEntitySpawn",
+      "type": "procedure",
+      "sortid": 33,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "adolf_hitler_on_initial_entity_spawn",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/bebraroflpov/procedures/AdolfHitlerOnInitialEntitySpawnProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Mobs"
+    },
+    {
+      "name": "AdolfHitler",
+      "type": "livingentity",
+      "sortid": 34,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "adolf_hitler",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/bebra_rofl_pov/models/item/adolf_hitler_spawn_egg.json",
+          "src/main/resources/data/bebra_rofl_pov/forge/biome_modifier/adolf_hitler_biome_modifier.json",
+          "src/main/java/net/mcreator/bebraroflpov/entity/AdolfHitlerEntity.java",
+          "src/main/java/net/mcreator/bebraroflpov/client/renderer/AdolfHitlerRenderer.java"
+        ]
+      },
+      "path": "~/Mobs"
     }
   ],
   "variable_elements": [],
@@ -609,8 +667,11 @@
     "ru_ru": {
       "subtitles.ak_fire": "Выстрел из AK-47",
       "entity.bebra_rofl_pov.hamascreeper": "Hamascreeper",
+      "entity.bebra_rofl_pov.hamasak_47": "Hamasak47",
       "block.bebra_rofl_pov.compressedbeaf": "Compressed Beaf",
       "item.bebra_rofl_pov.hamashead": "Hamashead",
+      "item.bebra_rofl_pov.hamasak_47_spawn_egg": "Hamasak47 Spawn Egg",
+      "entity.bebra_rofl_pov.adolf_hitler": "Adolf Hitler",
       "entity.bebra_rofl_pov.yayko": "Yayko",
       "entity.bebra_rofl_pov.hamas": "Hamas",
       "block.bebra_rofl_pov.hitlerblock": "Hitlerblock",
@@ -629,6 +690,7 @@
       "subtitles.govnida": "PISUNCHIK",
       "block.bebra_rofl_pov.ia_dyr_ia_vyipidoras": "Ia DYR Ia VYIPIDORAS",
       "itemGroup.tabcreative_tab": "Ночной кошмар ашана",
+      "item.bebra_rofl_pov.adolf_hitler_spawn_egg": "Adolf Hitler Spawn Egg",
       "item.bebra_rofl_pov.ak_47_ammo": "AK-47 Ammo",
       "entity.minecraft.villager.bebra_rofl_pov.evreitrade": "Evreitrade",
       "item.bebra_rofl_pov.dvorecvgelendshike.desc": "govnida",
@@ -638,8 +700,11 @@
     "en_us": {
       "subtitles.ak_fire": "Shot from AK-47",
       "entity.bebra_rofl_pov.hamascreeper": "Hamascreeper",
+      "entity.bebra_rofl_pov.hamasak_47": "Hamasak47",
       "block.bebra_rofl_pov.compressedbeaf": "Compressed Beaf",
       "item.bebra_rofl_pov.hamashead": "Hamashead",
+      "item.bebra_rofl_pov.hamasak_47_spawn_egg": "Hamasak47 Spawn Egg",
+      "entity.bebra_rofl_pov.adolf_hitler": "Adolf Hitler",
       "entity.bebra_rofl_pov.yayko": "Yayko",
       "entity.bebra_rofl_pov.hamas": "Hamas",
       "block.bebra_rofl_pov.hitlerblock": "Hitlerblock",
@@ -658,6 +723,7 @@
       "subtitles.govnida": "PISUNCHIK",
       "block.bebra_rofl_pov.ia_dyr_ia_vyipidoras": "Ia DYR Ia VYIPIDORAS",
       "itemGroup.tabcreative_tab": "Ночной кошмар ашана",
+      "item.bebra_rofl_pov.adolf_hitler_spawn_egg": "Adolf Hitler Spawn Egg",
       "item.bebra_rofl_pov.ak_47_ammo": "AK-47 Ammo",
       "entity.minecraft.villager.bebra_rofl_pov.evreitrade": "Evreitrade",
       "item.bebra_rofl_pov.dvorecvgelendshike.desc": "govnida",
