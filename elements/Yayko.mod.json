@@ -20,7 +20,7 @@
       "falpha": 0.0
     },
     "spawnEggDotColor": {
-      "value": -1,
+      "value": -13312,
       "falpha": 0.0
     },
     "creativeTab": {
@@ -95,6 +95,12 @@
     },
     "stepSound": {
       "value": ""
+    },
+    "onMobTickUpdate": {
+      "name": "YaykoOnInitialEntitySpawn"
+    },
+    "onInitialSpawn": {
+      "name": "YaykoOnInitialEntitySpawn"
     },
     "hasAI": true,
     "aiBase": "(none)",

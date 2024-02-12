@@ -96,7 +96,7 @@
     "stepSound": {
       "value": ""
     },
-    "onInitialSpawn": {
+    "whenMobIsHurt": {
       "name": "AdolfHitlerOnInitialEntitySpawn"
     },
     "hasAI": true,

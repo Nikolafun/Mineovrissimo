@@ -594,6 +594,20 @@
         ]
       },
       "path": "~/Mobs"
+    },
+    {
+      "name": "YaykoOnInitialEntitySpawn",
+      "type": "procedure",
+      "sortid": 35,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "yayko_on_initial_entity_spawn",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/bebraroflpov/procedures/YaykoOnInitialEntitySpawnProcedure.java"
+        ],
+        "dependencies": []
+      }
     }
   ],
   "variable_elements": [],

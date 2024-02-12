@@ -38,7 +38,7 @@ public class BebraRoflPovModItems {
 			() -> new ForgeSpawnEggItem(BebraRoflPovModEntities.HAMASCREEPER, -16737997, -26368, new Item.Properties().tab(BebraRoflPovModTabs.TAB_CREATIVE_TAB)));
 	public static final RegistryObject<Item> HAMASHEAD = REGISTRY.register("hamashead", () -> new HamasheadItem());
 	public static final RegistryObject<Item> BANDERIK = block(BebraRoflPovModBlocks.BANDERIK, BebraRoflPovModTabs.TAB_CREATIVE_TAB);
-	public static final RegistryObject<Item> YAYKO_SPAWN_EGG = REGISTRY.register("yayko_spawn_egg", () -> new ForgeSpawnEggItem(BebraRoflPovModEntities.YAYKO, -1, -1, new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
+	public static final RegistryObject<Item> YAYKO_SPAWN_EGG = REGISTRY.register("yayko_spawn_egg", () -> new ForgeSpawnEggItem(BebraRoflPovModEntities.YAYKO, -1, -13312, new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
 	public static final RegistryObject<Item> HITLER = REGISTRY.register("hitler", () -> new HitlerItem());
 	public static final RegistryObject<Item> HITLERBLOCK = block(BebraRoflPovModBlocks.HITLERBLOCK, BebraRoflPovModTabs.TAB_CREATIVE_TAB);
 	public static final RegistryObject<Item> HAMASAK_47_SPAWN_EGG = REGISTRY.register("hamasak_47_spawn_egg", () -> new ForgeSpawnEggItem(BebraRoflPovModEntities.HAMASAK_47, -1, -1, new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
