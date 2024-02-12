@@ -181,6 +181,38 @@
             "type": "entity"
           },
           {
+            "name": "renderable",
+            "type": "logic"
+          },
+          {
+            "name": "camX",
+            "type": "number"
+          },
+          {
+            "name": "camY",
+            "type": "number"
+          },
+          {
+            "name": "camZ",
+            "type": "number"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "pose",
+            "type": "pose"
+          },
+          {
             "name": "world",
             "type": "world"
           }

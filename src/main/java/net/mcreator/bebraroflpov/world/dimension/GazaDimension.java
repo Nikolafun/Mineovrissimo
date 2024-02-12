@@ -4,19 +4,12 @@ package net.mcreator.bebraroflpov.world.dimension;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.event.entity.player.PlayerEvent;
 import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.world.phys.Vec3;
-import net.minecraft.world.level.Level;
-import net.minecraft.world.entity.Entity;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.resources.ResourceKey;
-import net.minecraft.core.Registry;
 import net.minecraft.client.renderer.DimensionSpecialEffects;
-
-import net.mcreator.bebraroflpov.procedures.GazaPlayerEntersDimensionProcedure;
 
 @Mod.EventBusSubscriber
 public class GazaDimension {
@@ -37,19 +30,6 @@ public class GazaDimension {
 				}
 			};
 			event.enqueueWork(() -> DimensionSpecialEffects.EFFECTS.put(new ResourceLocation("bebra_rofl_pov:gaza"), customEffect));
-		}
-	}
-
-	@SubscribeEvent
-	public static void onPlayerChangedDimensionEvent(PlayerEvent.PlayerChangedDimensionEvent event) {
-		Entity entity = event.getEntity();
-		Level world = entity.level;
-		double x = entity.getX();
-		double y = entity.getY();
-		double z = entity.getZ();
-		if (event.getTo() == ResourceKey.create(Registry.DIMENSION_REGISTRY, new ResourceLocation("bebra_rofl_pov:gaza"))) {
-
-			GazaPlayerEntersDimensionProcedure.execute(world, entity);
 		}
 	}
 }

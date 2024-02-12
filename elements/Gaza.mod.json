@@ -4,7 +4,7 @@
   "definition": {
     "biomesInDimension": [
       {
-        "value": "desert"
+        "value": "CUSTOM:Gazadesert"
       }
     ],
     "worldGenType": "Normal world gen",
@@ -21,9 +21,6 @@
     "sleepResult": "ALLOW",
     "hasSkyLight": false,
     "imitateOverworldBehaviour": false,
-    "onPlayerEntersDimension": {
-      "name": "GazaPlayerEntersDimension"
-    },
     "portalFrame": {
       "value": "CUSTOM:Compressedbeaf"
     },
