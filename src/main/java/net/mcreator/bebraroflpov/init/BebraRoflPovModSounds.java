@@ -19,4 +19,5 @@ public class BebraRoflPovModSounds {
 	public static final RegistryObject<SoundEvent> AK_FIRE = REGISTRY.register("ak_fire", () -> new SoundEvent(new ResourceLocation("bebra_rofl_pov", "ak_fire")));
 	public static final RegistryObject<SoundEvent> ALLAH = REGISTRY.register("allah", () -> new SoundEvent(new ResourceLocation("bebra_rofl_pov", "allah")));
 	public static final RegistryObject<SoundEvent> PODLAYA_MUSICA = REGISTRY.register("podlaya_musica", () -> new SoundEvent(new ResourceLocation("bebra_rofl_pov", "podlaya_musica")));
+	public static final RegistryObject<SoundEvent> PALESTIINAKIDCRUING = REGISTRY.register("palestiinakidcruing", () -> new SoundEvent(new ResourceLocation("bebra_rofl_pov", "palestiinakidcruing")));
 }

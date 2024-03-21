@@ -2,10 +2,10 @@
   "_fv": 43,
   "_type": "livingentity",
   "definition": {
-    "mobName": "Hamas",
+    "mobName": "Maksimkats",
     "mobLabel": "",
     "mobModelName": "Biped",
-    "mobModelTexture": "hamas.png",
+    "mobModelTexture": "maksim_kats.png",
     "mobModelGlowTexture": "",
     "solidBoundingBox": {
       "fixedValue": false
@@ -16,21 +16,21 @@
     "mountedYOffset": 0.0,
     "hasSpawnEgg": true,
     "spawnEggBaseColor": {
-      "value": -13408768,
+      "value": -16711732,
       "falpha": 0.0
     },
     "spawnEggDotColor": {
-      "value": -13428224,
+      "value": -13421824,
       "falpha": 0.0
     },
     "creativeTab": {
-      "value": "CUSTOM:CreativeTab"
+      "value": "MISC"
     },
     "isBoss": false,
     "bossBarColor": "PINK",
     "bossBarType": "PROGRESS",
     "equipmentMainHand": {
-      "value": "CUSTOM:AK47"
+      "value": ""
     },
     "equipmentOffHand": {
       "value": ""
@@ -76,7 +76,7 @@
     "immuneToLightning": false,
     "immuneToPotions": false,
     "immuneToPlayer": false,
-    "immuneToExplosion": true,
+    "immuneToExplosion": false,
     "immuneToTrident": false,
     "immuneToAnvil": false,
     "immuneToWither": false,
@@ -88,23 +88,17 @@
       "value": ""
     },
     "hurtSound": {
-      "value": ""
+      "value": "entity.generic.hurt"
     },
     "deathSound": {
-      "value": "CUSTOM:allah"
+      "value": "entity.generic.death"
     },
     "stepSound": {
       "value": ""
     },
-    "whenMobDies": {
-      "name": "HamasDies"
-    },
-    "onInitialSpawn": {
-      "name": "HamasFall"
-    },
     "hasAI": true,
     "aiBase": "(none)",
-    "aixml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"aitasks_container\" deletable=\"false\" x=\"40\" y=\"40\"><next><block type=\"attack_entity\"><field name=\"insight\">FALSE</field><field name=\"nearby\">FALSE</field><field name=\"entity\">EntityPlayer</field><field name=\"condition\">null,null</field><next><block type=\"attack_on_collide\"><field name=\"speed\">1.2</field><field name=\"longmemory\">FALSE</field><field name=\"condition\">null,null</field><next><block type=\"wander\"><field name=\"speed\">1</field><field name=\"condition\">null,null</field><next><block type=\"attack_action\"><field name=\"callhelp\">FALSE</field><field name=\"condition\">null,null</field><next><block type=\"look_around\"><field name=\"condition\">null,null</field><next><block type=\"swim_in_water\"><field name=\"condition\">null,null</field></block></next></block></next></block></next></block></next></block></next></block></next></block></xml>",
+    "aixml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"aitasks_container\" deletable=\"false\" x=\"40\" y=\"40\"><next><block type=\"attack_on_collide\"><field name=\"speed\">1.2</field><field name=\"longmemory\">FALSE</field><field name=\"condition\">null,null</field><next><block type=\"wander\"><field name=\"speed\">1</field><field name=\"condition\">null,null</field><next><block type=\"attack_action\"><field name=\"callhelp\">FALSE</field><field name=\"condition\">null,null</field><next><block type=\"look_around\"><field name=\"condition\">null,null</field><next><block type=\"swim_in_water\"><field name=\"condition\">null,null</field></block></next></block></next></block></next></block></next></block></next></block></xml>",
     "breedable": false,
     "tameable": false,
     "breedTriggerItems": [],
@@ -116,16 +110,12 @@
     "rangedAttackInterval": 20,
     "rangedAttackRadius": 10.0,
     "spawnThisMob": true,
-    "doesDespawnWhenIdle": false,
+    "doesDespawnWhenIdle": true,
     "spawningProbability": 20,
     "mobSpawningType": "monster",
     "minNumberOfMobsPerGroup": 4,
     "maxNumberOfMobsPerGroup": 4,
-    "restrictionBiomes": [
-      {
-        "value": "CUSTOM:Gazadesert"
-      }
-    ],
+    "restrictionBiomes": [],
     "spawnInDungeons": false
   }
 }

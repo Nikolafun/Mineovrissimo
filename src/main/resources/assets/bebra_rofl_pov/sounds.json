@@ -32,5 +32,14 @@
         "stream": false
       }
     ]
+  },
+  "palestiinakidcruing": {
+    "subtitle": "subtitles.palestiinakidcruing",
+    "sounds": [
+      {
+        "name": "bebra_rofl_pov:baby_crying_sound_effect",
+        "stream": false
+      }
+    ]
   }
 }

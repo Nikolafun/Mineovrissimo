@@ -17,9 +17,11 @@ import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.Entity;
 
 import net.mcreator.bebraroflpov.entity.YaykoEntity;
+import net.mcreator.bebraroflpov.entity.MaksimkatsEntity;
 import net.mcreator.bebraroflpov.entity.HamascreeperEntity;
 import net.mcreator.bebraroflpov.entity.Hamasak47Entity;
 import net.mcreator.bebraroflpov.entity.HamasEntity;
+import net.mcreator.bebraroflpov.entity.GazachildrenEntity;
 import net.mcreator.bebraroflpov.entity.EvreiEntity;
 import net.mcreator.bebraroflpov.entity.EvreeshigatorEntity;
 import net.mcreator.bebraroflpov.entity.AdolfHitlerEntity;
@@ -57,6 +59,14 @@ public class BebraRoflPovModEntities {
 			EntityType.Builder.<AdolfHitlerEntity>of(AdolfHitlerEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(AdolfHitlerEntity::new)
 
 					.sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<MaksimkatsEntity>> MAKSIMKATS = register("maksimkats",
+			EntityType.Builder.<MaksimkatsEntity>of(MaksimkatsEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(MaksimkatsEntity::new)
+
+					.sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<GazachildrenEntity>> GAZACHILDREN = register("gazachildren",
+			EntityType.Builder.<GazachildrenEntity>of(GazachildrenEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(GazachildrenEntity::new)
+
+					.sized(0.6f, 1.8f));
 
 	private static <T extends Entity> RegistryObject<EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
 		return REGISTRY.register(registryname, () -> (EntityType<T>) entityTypeBuilder.build(registryname));
@@ -71,6 +81,8 @@ public class BebraRoflPovModEntities {
 			YaykoEntity.init();
 			Hamasak47Entity.init();
 			AdolfHitlerEntity.init();
+			MaksimkatsEntity.init();
+			GazachildrenEntity.init();
 		});
 	}
 
@@ -82,5 +94,7 @@ public class BebraRoflPovModEntities {
 		event.put(YAYKO.get(), YaykoEntity.createAttributes().build());
 		event.put(HAMASAK_47.get(), Hamasak47Entity.createAttributes().build());
 		event.put(ADOLF_HITLER.get(), AdolfHitlerEntity.createAttributes().build());
+		event.put(MAKSIMKATS.get(), MaksimkatsEntity.createAttributes().build());
+		event.put(GAZACHILDREN.get(), GazachildrenEntity.createAttributes().build());
 	}
 }

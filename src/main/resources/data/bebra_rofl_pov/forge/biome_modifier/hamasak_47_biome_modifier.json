@@ -1,8 +1,6 @@
 {
   "type": "forge:add_spawns",
-  "biomes": {
-    "type": "forge:any"
-  },
+  "biomes": "bebra_rofl_pov:gazadesert",
   "spawners": {
     "type": "bebra_rofl_pov:hamasak_47",
     "weight": 20,

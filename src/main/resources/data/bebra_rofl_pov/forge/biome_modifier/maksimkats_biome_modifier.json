@@ -1,8 +1,10 @@
 {
   "type": "forge:add_spawns",
-  "biomes": "bebra_rofl_pov:gazadesert",
+  "biomes": {
+    "type": "forge:any"
+  },
   "spawners": {
-    "type": "bebra_rofl_pov:hamascreeper",
+    "type": "bebra_rofl_pov:maksimkats",
     "weight": 20,
     "minCount": 4,
     "maxCount": 4

@@ -608,6 +608,70 @@
         ],
         "dependencies": []
       }
+    },
+    {
+      "name": "Maksimkats",
+      "type": "livingentity",
+      "sortid": 36,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "maksimkats",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/bebraroflpov/entity/MaksimkatsEntity.java",
+          "src/main/resources/data/bebra_rofl_pov/forge/biome_modifier/maksimkats_biome_modifier.json",
+          "src/main/resources/assets/bebra_rofl_pov/models/item/maksimkats_spawn_egg.json",
+          "src/main/java/net/mcreator/bebraroflpov/client/renderer/MaksimkatsRenderer.java"
+        ]
+      },
+      "path": "~/Mobs"
+    },
+    {
+      "name": "GazachildrenRightClickedOnEntity",
+      "type": "procedure",
+      "sortid": 37,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gazachildren_right_clicked_on_entity",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/bebraroflpov/procedures/GazachildrenRightClickedOnEntityProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Gazachildren",
+      "type": "livingentity",
+      "sortid": 38,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gazachildren",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/bebra_rofl_pov/forge/biome_modifier/gazachildren_biome_modifier.json",
+          "src/main/java/net/mcreator/bebraroflpov/entity/GazachildrenEntity.java",
+          "src/main/resources/assets/bebra_rofl_pov/models/item/gazachildren_spawn_egg.json",
+          "src/main/java/net/mcreator/bebraroflpov/client/renderer/GazachildrenRenderer.java"
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -643,27 +707,39 @@
       ],
       "category": "neutral",
       "subtitle": ""
+    },
+    {
+      "name": "palestiinakidcruing",
+      "files": [
+        "baby_crying_sound_effect"
+      ],
+      "category": "voice",
+      "subtitle": "Gay nigga sex"
     }
   ],
   "language_map": {
     "ru_ru": {
+      "item.bebra_rofl_pov.gazachildren_spawn_egg": "Gazachildren Spawn Egg",
       "subtitles.ak_fire": "Выстрел из AK-47",
-      "entity.bebra_rofl_pov.hamasak_47": "Hamasak47",
       "entity.bebra_rofl_pov.hamascreeper": "Hamascreeper",
-      "block.bebra_rofl_pov.compressedbeaf": "Compressed Beaf",
-      "item.bebra_rofl_pov.hamashead": "Hamashead",
+      "entity.bebra_rofl_pov.hamasak_47": "Hamasak47",
       "item.bebra_rofl_pov.hamasak_47_spawn_egg": "Hamasak47 Spawn Egg",
+      "item.bebra_rofl_pov.hamashead": "Hamashead",
+      "block.bebra_rofl_pov.compressedbeaf": "Compressed Beaf",
       "entity.bebra_rofl_pov.adolf_hitler": "Adolf Hitler",
+      "entity.bebra_rofl_pov.maksimkats": "Maksimkats",
       "entity.bebra_rofl_pov.yayko": "Yayko",
       "entity.bebra_rofl_pov.hamas": "Hamas",
       "block.bebra_rofl_pov.hitlerblock": "Hitlerblock",
       "item.bebra_rofl_pov.hamas_spawn_egg": "Hamas Spawn Egg",
+      "subtitles.palestiinakidcruing": "Gay nigga sex",
       "block.bebra_rofl_pov.banderik": "Banderik",
       "item.bebra_rofl_pov.dvorecvgelendshike": "Dvorecvgelendshike",
       "item.bebra_rofl_pov.gaza": "Gaza Portal Igniter",
       "item.bebra_rofl_pov.evrei_spawn_egg": "Evrei Spawn Egg",
       "item.bebra_rofl_pov.hitler": "Hitler",
       "item.bebra_rofl_pov.hamascreeper_spawn_egg": "Hamascreeper Spawn Egg",
+      "entity.bebra_rofl_pov.gazachildren": "Gazachildren",
       "subtitles.allah": "",
       "biome.bebra_rofl_pov.gazadesert": "Gazadesert",
       "item.bebra_rofl_pov.ak_47": "AK-47",
@@ -677,26 +753,31 @@
       "entity.minecraft.villager.bebra_rofl_pov.evreitrade": "Evreitrade",
       "item.bebra_rofl_pov.dvorecvgelendshike.desc": "govnida",
       "entity.bebra_rofl_pov.evrei": "Evrei",
+      "item.bebra_rofl_pov.maksimkats_spawn_egg": "Maksimkats Spawn Egg",
       "item.bebra_rofl_pov.yayko_spawn_egg": "Yayko Spawn Egg"
     },
     "en_us": {
+      "item.bebra_rofl_pov.gazachildren_spawn_egg": "Gazachildren Spawn Egg",
       "subtitles.ak_fire": "Shot from AK-47",
-      "entity.bebra_rofl_pov.hamasak_47": "Hamasak47",
       "entity.bebra_rofl_pov.hamascreeper": "Hamascreeper",
-      "block.bebra_rofl_pov.compressedbeaf": "Compressed Beaf",
-      "item.bebra_rofl_pov.hamashead": "Hamashead",
+      "entity.bebra_rofl_pov.hamasak_47": "Hamasak47",
       "item.bebra_rofl_pov.hamasak_47_spawn_egg": "Hamasak47 Spawn Egg",
+      "item.bebra_rofl_pov.hamashead": "Hamashead",
+      "block.bebra_rofl_pov.compressedbeaf": "Compressed Beaf",
       "entity.bebra_rofl_pov.adolf_hitler": "Adolf Hitler",
+      "entity.bebra_rofl_pov.maksimkats": "Maksimkats",
       "entity.bebra_rofl_pov.yayko": "Yayko",
       "entity.bebra_rofl_pov.hamas": "Hamas",
       "block.bebra_rofl_pov.hitlerblock": "Hitlerblock",
       "item.bebra_rofl_pov.hamas_spawn_egg": "Hamas Spawn Egg",
+      "subtitles.palestiinakidcruing": "Gay nigga sex",
       "block.bebra_rofl_pov.banderik": "Banderik",
       "item.bebra_rofl_pov.dvorecvgelendshike": "Dvorecvgelendshike",
       "item.bebra_rofl_pov.gaza": "Gaza Portal Igniter",
       "item.bebra_rofl_pov.evrei_spawn_egg": "Evrei Spawn Egg",
       "item.bebra_rofl_pov.hitler": "Hitler",
       "item.bebra_rofl_pov.hamascreeper_spawn_egg": "Hamascreeper Spawn Egg",
+      "entity.bebra_rofl_pov.gazachildren": "Gazachildren",
       "subtitles.allah": "",
       "biome.bebra_rofl_pov.gazadesert": "Gazadesert",
       "item.bebra_rofl_pov.ak_47": "AK-47",
@@ -710,6 +791,7 @@
       "entity.minecraft.villager.bebra_rofl_pov.evreitrade": "Evreitrade",
       "item.bebra_rofl_pov.dvorecvgelendshike.desc": "govnida",
       "entity.bebra_rofl_pov.evrei": "Evrei",
+      "item.bebra_rofl_pov.maksimkats_spawn_egg": "Maksimkats Spawn Egg",
       "item.bebra_rofl_pov.yayko_spawn_egg": "Yayko Spawn Egg"
     }
   },
