@@ -32,6 +32,7 @@ import net.minecraft.network.FriendlyByteBuf;
 import net.mcreator.bebraroflpov.init.BebraRoflPovModVillagerProfessions;
 import net.mcreator.bebraroflpov.init.BebraRoflPovModTabs;
 import net.mcreator.bebraroflpov.init.BebraRoflPovModSounds;
+import net.mcreator.bebraroflpov.init.BebraRoflPovModParticleTypes;
 import net.mcreator.bebraroflpov.init.BebraRoflPovModPaintings;
 import net.mcreator.bebraroflpov.init.BebraRoflPovModItems;
 import net.mcreator.bebraroflpov.init.BebraRoflPovModEntities;
@@ -62,6 +63,8 @@ public class BebraRoflPovMod {
 		BebraRoflPovModEntities.REGISTRY.register(bus);
 
 		BebraRoflPovModPaintings.REGISTRY.register(bus);
+
+		BebraRoflPovModParticleTypes.REGISTRY.register(bus);
 
 		BebraRoflPovModBiomes.REGISTRY.register(bus);
 		BebraRoflPovModVillagerProfessions.PROFESSIONS.register(bus);

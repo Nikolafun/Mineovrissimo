@@ -19,6 +19,7 @@ import net.minecraft.world.entity.ai.goal.RandomStrollGoal;
 import net.minecraft.world.entity.ai.goal.RandomLookAroundGoal;
 import net.minecraft.world.entity.ai.goal.MeleeAttackGoal;
 import net.minecraft.world.entity.ai.goal.FloatGoal;
+import net.minecraft.world.entity.ai.goal.BreedGoal;
 import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
 import net.minecraft.world.entity.SpawnPlacements;
@@ -64,16 +65,17 @@ public class GazachildrenEntity extends Animal {
 	protected void registerGoals() {
 		super.registerGoals();
 		this.goalSelector.addGoal(1, new TemptGoal(this, 1, Ingredient.of(Items.WATER_BUCKET), false));
-		this.goalSelector.addGoal(2, new MeleeAttackGoal(this, 1.2, false) {
+		this.goalSelector.addGoal(2, new BreedGoal(this, 20));
+		this.goalSelector.addGoal(3, new MeleeAttackGoal(this, 1.2, false) {
 			@Override
 			protected double getAttackReachSqr(LivingEntity entity) {
 				return this.mob.getBbWidth() * this.mob.getBbWidth() + entity.getBbWidth();
 			}
 		});
-		this.goalSelector.addGoal(3, new RandomStrollGoal(this, 1));
-		this.targetSelector.addGoal(4, new HurtByTargetGoal(this));
-		this.goalSelector.addGoal(5, new RandomLookAroundGoal(this));
-		this.goalSelector.addGoal(6, new FloatGoal(this));
+		this.goalSelector.addGoal(4, new RandomStrollGoal(this, 1));
+		this.targetSelector.addGoal(5, new HurtByTargetGoal(this));
+		this.goalSelector.addGoal(6, new RandomLookAroundGoal(this));
+		this.goalSelector.addGoal(7, new FloatGoal(this));
 	}
 
 	@Override
@@ -112,7 +114,7 @@ public class GazachildrenEntity extends Animal {
 		Entity entity = this;
 		Level world = this.level;
 
-		GazachildrenRightClickedOnEntityProcedure.execute(world, x, y, z);
+		GazachildrenRightClickedOnEntityProcedure.execute(world, x, y, z, entity);
 		return retval;
 	}
 

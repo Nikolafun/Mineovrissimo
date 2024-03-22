@@ -639,6 +639,10 @@
         ],
         "dependencies": [
           {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
             "name": "x",
             "type": "number"
           },
@@ -670,6 +674,19 @@
           "src/main/java/net/mcreator/bebraroflpov/entity/GazachildrenEntity.java",
           "src/main/resources/assets/bebra_rofl_pov/models/item/gazachildren_spawn_egg.json",
           "src/main/java/net/mcreator/bebraroflpov/client/renderer/GazachildrenRenderer.java"
+        ]
+      }
+    },
+    {
+      "name": "Zighail",
+      "type": "particle",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "zighail",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/bebraroflpov/client/particle/ZighailParticle.java",
+          "src/main/resources/assets/bebra_rofl_pov/particles/zighail.json"
         ]
       }
     }
