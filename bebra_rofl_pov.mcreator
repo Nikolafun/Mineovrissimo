@@ -732,17 +732,26 @@
       ],
       "category": "voice",
       "subtitle": "Gay nigga sex"
+    },
+    {
+      "name": "niggers",
+      "files": [
+        "hog_rider_say_the_n_-_word_bassbosted"
+      ],
+      "category": "voice",
+      "subtitle": "niggers"
     }
   ],
   "language_map": {
     "ru_ru": {
       "item.bebra_rofl_pov.gazachildren_spawn_egg": "Gazachildren Spawn Egg",
       "subtitles.ak_fire": "Выстрел из AK-47",
-      "entity.bebra_rofl_pov.hamascreeper": "Hamascreeper",
       "entity.bebra_rofl_pov.hamasak_47": "Hamasak47",
+      "entity.bebra_rofl_pov.hamascreeper": "Hamascreeper",
       "item.bebra_rofl_pov.hamasak_47_spawn_egg": "Hamasak47 Spawn Egg",
       "item.bebra_rofl_pov.hamashead": "Hamashead",
       "block.bebra_rofl_pov.compressedbeaf": "Compressed Beaf",
+      "subtitles.niggers": "niggers",
       "entity.bebra_rofl_pov.adolf_hitler": "Adolf Hitler",
       "entity.bebra_rofl_pov.maksimkats": "Maksimkats",
       "entity.bebra_rofl_pov.yayko": "Yayko",
@@ -776,11 +785,12 @@
     "en_us": {
       "item.bebra_rofl_pov.gazachildren_spawn_egg": "Gazachildren Spawn Egg",
       "subtitles.ak_fire": "Shot from AK-47",
-      "entity.bebra_rofl_pov.hamascreeper": "Hamascreeper",
       "entity.bebra_rofl_pov.hamasak_47": "Hamasak47",
+      "entity.bebra_rofl_pov.hamascreeper": "Hamascreeper",
       "item.bebra_rofl_pov.hamasak_47_spawn_egg": "Hamasak47 Spawn Egg",
       "item.bebra_rofl_pov.hamashead": "Hamashead",
       "block.bebra_rofl_pov.compressedbeaf": "Compressed Beaf",
+      "subtitles.niggers": "niggers",
       "entity.bebra_rofl_pov.adolf_hitler": "Adolf Hitler",
       "entity.bebra_rofl_pov.maksimkats": "Maksimkats",
       "entity.bebra_rofl_pov.yayko": "Yayko",
