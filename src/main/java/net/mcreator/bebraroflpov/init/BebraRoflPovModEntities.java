@@ -23,6 +23,7 @@ import net.mcreator.bebraroflpov.entity.Hamasak47Entity;
 import net.mcreator.bebraroflpov.entity.HamasEntity;
 import net.mcreator.bebraroflpov.entity.GazachildrenEntity;
 import net.mcreator.bebraroflpov.entity.EvreiEntity;
+import net.mcreator.bebraroflpov.entity.EvreeszigatoradolfEntity;
 import net.mcreator.bebraroflpov.entity.EvreeshigatorEntity;
 import net.mcreator.bebraroflpov.entity.AdolfHitlerEntity;
 import net.mcreator.bebraroflpov.entity.AK47Entity;
@@ -55,10 +56,8 @@ public class BebraRoflPovModEntities {
 			EntityType.Builder.<Hamasak47Entity>of(Hamasak47Entity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(Hamasak47Entity::new)
 
 					.sized(0.6f, 1.8f));
-	public static final RegistryObject<EntityType<AdolfHitlerEntity>> ADOLF_HITLER = register("adolf_hitler",
-			EntityType.Builder.<AdolfHitlerEntity>of(AdolfHitlerEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(AdolfHitlerEntity::new)
-
-					.sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<AdolfHitlerEntity>> ADOLF_HITLER = register("adolf_hitler", EntityType.Builder.<AdolfHitlerEntity>of(AdolfHitlerEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true)
+			.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(AdolfHitlerEntity::new).fireImmune().sized(0.6f, 1.8f));
 	public static final RegistryObject<EntityType<MaksimkatsEntity>> MAKSIMKATS = register("maksimkats",
 			EntityType.Builder.<MaksimkatsEntity>of(MaksimkatsEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(MaksimkatsEntity::new)
 
@@ -67,6 +66,8 @@ public class BebraRoflPovModEntities {
 			EntityType.Builder.<GazachildrenEntity>of(GazachildrenEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(GazachildrenEntity::new)
 
 					.sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<EvreeszigatoradolfEntity>> EVREESZIGATORADOLF = register("projectile_evreeszigatoradolf", EntityType.Builder.<EvreeszigatoradolfEntity>of(EvreeszigatoradolfEntity::new, MobCategory.MISC)
+			.setCustomClientFactory(EvreeszigatoradolfEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
 
 	private static <T extends Entity> RegistryObject<EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
 		return REGISTRY.register(registryname, () -> (EntityType<T>) entityTypeBuilder.build(registryname));

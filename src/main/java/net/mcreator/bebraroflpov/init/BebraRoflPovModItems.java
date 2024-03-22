@@ -17,6 +17,7 @@ import net.minecraft.world.item.BlockItem;
 import net.mcreator.bebraroflpov.item.HitlerItem;
 import net.mcreator.bebraroflpov.item.HamasheadItem;
 import net.mcreator.bebraroflpov.item.GazaItem;
+import net.mcreator.bebraroflpov.item.EvreeszigatoradolfItem;
 import net.mcreator.bebraroflpov.item.EvreeshigatorItem;
 import net.mcreator.bebraroflpov.item.DvorecvgelendshikeItem;
 import net.mcreator.bebraroflpov.item.AK47Item;
@@ -47,6 +48,7 @@ public class BebraRoflPovModItems {
 	public static final RegistryObject<Item> MAKSIMKATS_SPAWN_EGG = REGISTRY.register("maksimkats_spawn_egg", () -> new ForgeSpawnEggItem(BebraRoflPovModEntities.MAKSIMKATS, -16711732, -13421824, new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
 	public static final RegistryObject<Item> GAZACHILDREN_SPAWN_EGG = REGISTRY.register("gazachildren_spawn_egg",
 			() -> new ForgeSpawnEggItem(BebraRoflPovModEntities.GAZACHILDREN, -16724788, -26164, new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
+	public static final RegistryObject<Item> EVREESZIGATORADOLF = REGISTRY.register("evreeszigatoradolf", () -> new EvreeszigatoradolfItem());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));

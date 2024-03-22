@@ -689,6 +689,22 @@
           "src/main/resources/assets/bebra_rofl_pov/particles/zighail.json"
         ]
       }
+    },
+    {
+      "name": "Evreeszigatoradolf",
+      "type": "rangeditem",
+      "sortid": 39,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "evreeszigatoradolf",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/bebra_rofl_pov/models/item/evreeszigatoradolf.json",
+          "src/main/java/net/mcreator/bebraroflpov/item/EvreeszigatoradolfItem.java",
+          "src/main/java/net/mcreator/bebraroflpov/entity/EvreeszigatoradolfEntity.java"
+        ]
+      },
+      "path": "~/Other hueta"
     }
   ],
   "variable_elements": [],
@@ -746,12 +762,13 @@
     "ru_ru": {
       "item.bebra_rofl_pov.gazachildren_spawn_egg": "Gazachildren Spawn Egg",
       "subtitles.ak_fire": "Выстрел из AK-47",
-      "entity.bebra_rofl_pov.hamasak_47": "Hamasak47",
       "entity.bebra_rofl_pov.hamascreeper": "Hamascreeper",
+      "entity.bebra_rofl_pov.hamasak_47": "Hamasak47",
       "item.bebra_rofl_pov.hamasak_47_spawn_egg": "Hamasak47 Spawn Egg",
       "item.bebra_rofl_pov.hamashead": "Hamashead",
       "block.bebra_rofl_pov.compressedbeaf": "Compressed Beaf",
       "subtitles.niggers": "niggers",
+      "item.bebra_rofl_pov.evreeszigatoradolf": "Евреесжигатор",
       "entity.bebra_rofl_pov.adolf_hitler": "Adolf Hitler",
       "entity.bebra_rofl_pov.maksimkats": "Maksimkats",
       "entity.bebra_rofl_pov.yayko": "Yayko",
@@ -785,12 +802,13 @@
     "en_us": {
       "item.bebra_rofl_pov.gazachildren_spawn_egg": "Gazachildren Spawn Egg",
       "subtitles.ak_fire": "Shot from AK-47",
-      "entity.bebra_rofl_pov.hamasak_47": "Hamasak47",
       "entity.bebra_rofl_pov.hamascreeper": "Hamascreeper",
+      "entity.bebra_rofl_pov.hamasak_47": "Hamasak47",
       "item.bebra_rofl_pov.hamasak_47_spawn_egg": "Hamasak47 Spawn Egg",
       "item.bebra_rofl_pov.hamashead": "Hamashead",
       "block.bebra_rofl_pov.compressedbeaf": "Compressed Beaf",
       "subtitles.niggers": "niggers",
+      "item.bebra_rofl_pov.evreeszigatoradolf": "Евреесжигатор",
       "entity.bebra_rofl_pov.adolf_hitler": "Adolf Hitler",
       "entity.bebra_rofl_pov.maksimkats": "Maksimkats",
       "entity.bebra_rofl_pov.yayko": "Yayko",

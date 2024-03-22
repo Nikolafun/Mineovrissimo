@@ -34,5 +34,6 @@ public class BebraRoflPovModEntityRenderers {
 		event.registerEntityRenderer(BebraRoflPovModEntities.ADOLF_HITLER.get(), AdolfHitlerRenderer::new);
 		event.registerEntityRenderer(BebraRoflPovModEntities.MAKSIMKATS.get(), MaksimkatsRenderer::new);
 		event.registerEntityRenderer(BebraRoflPovModEntities.GAZACHILDREN.get(), GazachildrenRenderer::new);
+		event.registerEntityRenderer(BebraRoflPovModEntities.EVREESZIGATORADOLF.get(), ThrownItemRenderer::new);
 	}
 }

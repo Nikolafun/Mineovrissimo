@@ -13,7 +13,7 @@
       "value": "Blocks.FLOWING_LAVA"
     },
     "airColor": {
-      "value": -16724788,
+      "value": -13434829,
       "falpha": 0.0
     },
     "foliageColor": {
@@ -44,7 +44,7 @@
     "particlesProbability": 0.5,
     "rainingPossibility": 0.5,
     "temperature": 0.5,
-    "spawnBiome": false,
+    "spawnBiome": true,
     "spawnInCaves": false,
     "spawnBiomeNether": false,
     "genTemperature": {
