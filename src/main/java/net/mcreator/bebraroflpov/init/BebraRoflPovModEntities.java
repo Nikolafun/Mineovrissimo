@@ -17,6 +17,7 @@ import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.Entity;
 
 import net.mcreator.bebraroflpov.entity.YaykoEntity;
+import net.mcreator.bebraroflpov.entity.PetergrifinEntity;
 import net.mcreator.bebraroflpov.entity.MaksimkatsEntity;
 import net.mcreator.bebraroflpov.entity.HamascreeperEntity;
 import net.mcreator.bebraroflpov.entity.Hamasak47Entity;
@@ -68,6 +69,10 @@ public class BebraRoflPovModEntities {
 					.sized(0.6f, 1.8f));
 	public static final RegistryObject<EntityType<EvreeszigatoradolfEntity>> EVREESZIGATORADOLF = register("projectile_evreeszigatoradolf", EntityType.Builder.<EvreeszigatoradolfEntity>of(EvreeszigatoradolfEntity::new, MobCategory.MISC)
 			.setCustomClientFactory(EvreeszigatoradolfEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
+	public static final RegistryObject<EntityType<PetergrifinEntity>> PETERGRIFIN = register("petergrifin",
+			EntityType.Builder.<PetergrifinEntity>of(PetergrifinEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(PetergrifinEntity::new)
+
+					.sized(0.6f, 1.8f));
 
 	private static <T extends Entity> RegistryObject<EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
 		return REGISTRY.register(registryname, () -> (EntityType<T>) entityTypeBuilder.build(registryname));
@@ -84,6 +89,7 @@ public class BebraRoflPovModEntities {
 			AdolfHitlerEntity.init();
 			MaksimkatsEntity.init();
 			GazachildrenEntity.init();
+			PetergrifinEntity.init();
 		});
 	}
 
@@ -97,5 +103,6 @@ public class BebraRoflPovModEntities {
 		event.put(ADOLF_HITLER.get(), AdolfHitlerEntity.createAttributes().build());
 		event.put(MAKSIMKATS.get(), MaksimkatsEntity.createAttributes().build());
 		event.put(GAZACHILDREN.get(), GazachildrenEntity.createAttributes().build());
+		event.put(PETERGRIFIN.get(), PetergrifinEntity.createAttributes().build());
 	}
 }

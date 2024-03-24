@@ -1,0 +1,10 @@
+{
+  "type": "forge:add_spawns",
+  "biomes": "desert",
+  "spawners": {
+    "type": "bebra_rofl_pov:petergrifin",
+    "weight": 20,
+    "minCount": 4,
+    "maxCount": 4
+  }
+}

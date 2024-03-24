@@ -21,4 +21,7 @@ public class BebraRoflPovModSounds {
 	public static final RegistryObject<SoundEvent> PODLAYA_MUSICA = REGISTRY.register("podlaya_musica", () -> new SoundEvent(new ResourceLocation("bebra_rofl_pov", "podlaya_musica")));
 	public static final RegistryObject<SoundEvent> PALESTIINAKIDCRUING = REGISTRY.register("palestiinakidcruing", () -> new SoundEvent(new ResourceLocation("bebra_rofl_pov", "palestiinakidcruing")));
 	public static final RegistryObject<SoundEvent> NIGGERS = REGISTRY.register("niggers", () -> new SoundEvent(new ResourceLocation("bebra_rofl_pov", "niggers")));
+	public static final RegistryObject<SoundEvent> LOBOTOMY = REGISTRY.register("lobotomy", () -> new SoundEvent(new ResourceLocation("bebra_rofl_pov", "lobotomy")));
+	public static final RegistryObject<SoundEvent> LOBOTOMYWOKS = REGISTRY.register("lobotomywoks", () -> new SoundEvent(new ResourceLocation("bebra_rofl_pov", "lobotomywoks")));
+	public static final RegistryObject<SoundEvent> SUBCRIBE1 = REGISTRY.register("subcribe1", () -> new SoundEvent(new ResourceLocation("bebra_rofl_pov", "subcribe1")));
 }

@@ -12,6 +12,7 @@ import net.minecraftforge.api.distmarker.Dist;
 import net.minecraft.client.renderer.entity.ThrownItemRenderer;
 
 import net.mcreator.bebraroflpov.client.renderer.YaykoRenderer;
+import net.mcreator.bebraroflpov.client.renderer.PetergrifinRenderer;
 import net.mcreator.bebraroflpov.client.renderer.MaksimkatsRenderer;
 import net.mcreator.bebraroflpov.client.renderer.HamascreeperRenderer;
 import net.mcreator.bebraroflpov.client.renderer.Hamasak47Renderer;
@@ -35,5 +36,6 @@ public class BebraRoflPovModEntityRenderers {
 		event.registerEntityRenderer(BebraRoflPovModEntities.MAKSIMKATS.get(), MaksimkatsRenderer::new);
 		event.registerEntityRenderer(BebraRoflPovModEntities.GAZACHILDREN.get(), GazachildrenRenderer::new);
 		event.registerEntityRenderer(BebraRoflPovModEntities.EVREESZIGATORADOLF.get(), ThrownItemRenderer::new);
+		event.registerEntityRenderer(BebraRoflPovModEntities.PETERGRIFIN.get(), PetergrifinRenderer::new);
 	}
 }

@@ -50,5 +50,31 @@
         "stream": false
       }
     ]
+  },
+  "lobotomy": {
+    "subtitle": "subtitles.lobotomy",
+    "sounds": [
+      {
+        "name": "bebra_rofl_pov:videopla321321321yback",
+        "stream": false
+      }
+    ]
+  },
+  "lobotomywoks": {
+    "subtitle": "subtitles.lobotomywoks",
+    "sounds": [
+      {
+        "name": "bebra_rofl_pov:lobotomy_sound_effect",
+        "stream": false
+      }
+    ]
+  },
+  "subcribe1": {
+    "sounds": [
+      {
+        "name": "bebra_rofl_pov:shizo-subscribe",
+        "stream": false
+      }
+    ]
   }
 }
